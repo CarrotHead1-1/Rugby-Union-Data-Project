@@ -6,10 +6,9 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "database": "RugbyDataWarehouse",
             "name": "PG Local",
-            "username": "postgres",
-            "password": "1"
+            "database": "postgres",
+            "username": "postgres"
         }
     ]
 }

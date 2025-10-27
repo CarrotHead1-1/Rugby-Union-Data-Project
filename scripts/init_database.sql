@@ -17,22 +17,23 @@ WARNING:
 
 -- Drop and recreate 'DataWhareHouse' database
 
-Do 
+do 
 $$
 begin
-    if exsists (select 1 from pg_database where datname = 'RugbyDataWarehouse') then 
+    if exists (select 1 from pg_database where datname = 'RugbyDataWarehouse') then 
         perform pg_terminate_backend(pid)
-        from pg_start_activity
+        from pg_stat_activity
         where datname = 'RugbyDataWarehouse';
 
-        execute datname = 'RugbyDataWarehouse';
+        execute datname =  'drop DATABASE RugbyDataWarehouse';
     end if; 
 end
 $$;
 
+\gexec
 -- create the 'DataWarehouse' database
 create DATABASE RugbyDataWarehouse;
-
+\connect RugbyDataWarehouse
 
 
 
