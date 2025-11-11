@@ -1,0 +1,338 @@
+{
+  "datasets": [
+    {
+      "name": "7754949b",
+      "displayName": "Total Wins Per Season",
+      "queryLines": [
+        "-- Count the number of wins per season\r\n",
+        "SELECT \r\n",
+        "    s.Season,\r\n",
+        "    SUM(CASE WHEN r.Result = 'Home Win' THEN 1 ELSE 0 END) AS Home_Wins,\r\n",
+        "    SUM(CASE WHEN r.Result = 'Away Win' THEN 1 ELSE 0 END) AS Away_Wins,\r\n",
+        "    SUM(CASE WHEN r.Result = 'Draw' THEN 1 ELSE 0 END) AS Draws\r\n",
+        "FROM rugby_data_dev.rugby_gold.Match_Fact f\r\n",
+        "JOIN rugby_data_dev.rugby_gold.Season_Dim s \r\n",
+        "    ON f.Season_Id = s.Season_Id\r\n",
+        "JOIN rugby_data_dev.rugby_gold.Result_Dim r \r\n",
+        "    ON f.Result_Id = r.Result_Id\r\n",
+        "GROUP BY s.Season\r\n",
+        "ORDER BY s.Season;\r\n"
+      ],
+      "catalog": "rugby_data_dev",
+      "schema": "rugby_gold"
+    },
+    {
+      "name": "e1743a59",
+      "displayName": "Wins by Each Team",
+      "queryLines": [
+        "-- Total number of wins and loses\r\n",
+        "select \r\n",
+        "    t.Team_Name,\r\n",
+        "    SUM(CASE \r\n",
+        "            WHEN r.Result = 'Home Win' and m.Home_Team_Id = t.Team_Id then 1\r\n",
+        "            when r.Result = 'Away Win' and m.Away_Team_Id = t.Team_Id then 1\r\n",
+        "            ELSE 0 \r\n",
+        "        END) AS Wins,\r\n",
+        "\r\n",
+        "    sum(CASE \r\n",
+        "            WHEN r.Result = 'Home Win' and m.Away_Team_Id = t.Team_Id then 1\r\n",
+        "            when r.Result = 'Away Win' and m.Home_Team_Id = t.Team_Id then 1\r\n",
+        "            ELSE 0 \r\n",
+        "        END) AS Loses,\r\n",
+        "\r\n",
+        "    sum(case \r\n",
+        "        when r.Result = 'Draw' and (m.Home_Team_Id = t.Team_Id or m.Away_Team_Id = t.Team_Id) then 1\r\n",
+        "        else 0\r\n",
+        "        end) as Draws\r\n",
+        "\r\n",
+        "from rugby_data_dev.rugby_gold.match_fact m\r\n",
+        "join rugby_data_dev.rugby_gold.teams_dim t on t.Team_Id in (m.Home_Team_Id, m.Away_Team_Id)\r\n",
+        "join rugby_data_dev.rugby_gold.result_dim r on m.Result_Id = r.Result_Id\r\n",
+        "group by t.Team_Name\r\n",
+        "order by Wins desc;\r\n",
+        "\r\n",
+        "-- aggregate all wins, loses and draws by season \r\n",
+        "select \r\n",
+        "    t.Team_Name as Team,\r\n",
+        "    s.Season as Season,\r\n",
+        "    SUM(CASE \r\n",
+        "            WHEN r.Result = 'Home Win' and m.Home_Team_Id = t.Team_Id then 1\r\n",
+        "            when r.Result = 'Away Win' and m.Away_Team_Id = t.Team_Id then 1\r\n",
+        "            ELSE 0 \r\n",
+        "        END) AS Wins,\r\n",
+        "\r\n",
+        "    sum(CASE \r\n",
+        "            WHEN r.Result = 'Home Win' and m.Away_Team_Id = t.Team_Id then 1\r\n",
+        "            when r.Result = 'Away Win' and m.Home_Team_Id = t.Team_Id then 1\r\n",
+        "            ELSE 0 \r\n",
+        "        END) AS Loses,\r\n",
+        "\r\n",
+        "    sum(case \r\n",
+        "        when r.Result = 'Draw' and (m.Home_Team_Id = t.Team_Id or m.Away_Team_Id = t.Team_Id) then 1\r\n",
+        "        else 0\r\n",
+        "        end) as Draws\r\n",
+        "\r\n",
+        "from rugby_data_dev.rugby_gold.match_fact m\r\n",
+        "join rugby_data_dev.rugby_gold.teams_dim t on t.Team_Id in (m.Home_Team_Id , m.Away_Team_Id)\r\n",
+        "join rugby_data_dev.rugby_gold.result_dim r on m.Result_Id = r.Result_Id\r\n",
+        "join rugby_data_dev.rugby_gold.season_dim s on s.Season_Id = m.Season_Id\r\n",
+        "group by t.Team_Name, s.Season\r\n",
+        "order by Season, Team desc;"
+      ],
+      "catalog": "rugby_data_dev",
+      "schema": "rugby_gold"
+    }
+  ],
+  "pages": [
+    {
+      "name": "9ee36e19",
+      "displayName": "Untitled page",
+      "layout": [
+        {
+          "widget": {
+            "name": "31316150",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "7754949b",
+                  "fields": [
+                    {
+                      "name": "Season",
+                      "expression": "`Season`"
+                    },
+                    {
+                      "name": "sum(Away_Wins)",
+                      "expression": "SUM(`Away_Wins`)"
+                    },
+                    {
+                      "name": "sum(Draws)",
+                      "expression": "SUM(`Draws`)"
+                    },
+                    {
+                      "name": "sum(Home_Wins)",
+                      "expression": "SUM(`Home_Wins`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Season",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "fields": [
+                    {
+                      "fieldName": "sum(Away_Wins)"
+                    },
+                    {
+                      "fieldName": "sum(Draws)"
+                    },
+                    {
+                      "fieldName": "sum(Home_Wins)"
+                    }
+                  ]
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Total Wins Across All Seasons"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "a720b7a8",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "e1743a59",
+                  "fields": [
+                    {
+                      "name": "Team",
+                      "expression": "`Team`"
+                    },
+                    {
+                      "name": "Season",
+                      "expression": "`Season`"
+                    },
+                    {
+                      "name": "sum(Wins)",
+                      "expression": "SUM(`Wins`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`Team` IN (`Team`) OR TRUE"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "Season",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(Wins)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Team",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": false
+                },
+                "extra": [
+                  {
+                    "fieldName": "Team"
+                  }
+                ]
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 6,
+            "height": 7
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    },
+    {
+      "name": "08100a15",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "46f37f44",
+            "queries": [
+              {
+                "name": "dashboards/01f0bf377a3e104d9659ce58eb8f617f/datasets/01f0bf4a9b38103b8406aee1ffba3bc9_Team",
+                "query": {
+                  "datasetName": "e1743a59",
+                  "fields": [
+                    {
+                      "name": "Team",
+                      "expression": "`Team`"
+                    },
+                    {
+                      "name": "Team_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "Team",
+                    "queryName": "dashboards/01f0bf377a3e104d9659ce58eb8f617f/datasets/01f0bf4a9b38103b8406aee1ffba3bc9_Team"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
