@@ -17,15 +17,15 @@ from utilities import team_names
 @dlt.expect_or_drop("valid_away_team", "AwayTeam IS NOT NULL")
 @dlt.expect_or_drop("valid_season", "Season IS NOT NULL")
 @dlt.expect_or_drop("valid_round", "Round IS NOT NULL")
-@dlt.expect_or_drop("valid_home_team_score", "HomeTeamScore IS NOT NULL")
-@dlt.expect_or_drop("valid_away_team_score", "AwayTeamScore IS NOT NULL")
+@dlt.expect_or_drop("valid_home_team_score", "HomeScore IS NOT NULL")
+@dlt.expect_or_drop("valid_away_team_score", "AwayScore IS NOT NULL")
 
 #validate teams and score 
 @dlt.expect("valid_scores", "HomeScore >= 0 AND AwayScore >= 0")
 @dlt.expect_or_drop("different_teams", "HomeTeam != AwayTeam")
 
 def match_results():
-    df = dlt.readStream("rubgy_data_dev.rugby_bronze.match_results_raw")
+    df = dlt.readStream("rugby_data_dev.rugby_bronze.match_results_raw")
 
     #normalise team names
     df = team_names.normalise_team_names(df)

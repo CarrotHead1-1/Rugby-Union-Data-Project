@@ -2,7 +2,7 @@ import dlt
 
 #create bronze ingestion table
 @dlt.table(
-    name = "rubgy_data_dev.rugby_bronze.match_results_raw",
+    name = "rugby_data_dev.rugby_bronze.match_results_raw",
     comment = "Raw data from the match results",
     table_properties = {"quality": "bronze"}
 )
