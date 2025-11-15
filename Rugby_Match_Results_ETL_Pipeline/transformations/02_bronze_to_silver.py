@@ -5,7 +5,7 @@ from utilities import team_names
 
 #create silver table
 @dlt.table(
-    name = "rugby_data_dev.rugby_silver.match_results",
+    name = "rugby_data_dev.rugby_silver.match_results_silver",
     comment = "Cleaned, Validated and Enriched match results",
     table_properties = {"quality": "silver"}
 )
@@ -25,7 +25,7 @@ from utilities import team_names
 @dlt.expect_or_drop("different_teams", "HomeTeam != AwayTeam")
 
 def match_results():
-    df = dlt.readStream("rugby_data_dev.rugby_bronze.match_results_raw")
+    df = dlt.readStream("rugby_data_dev.rugby_bronze.match_results_bronze")
 
     #normalise team names
     df = team_names.normalise_team_names(df)

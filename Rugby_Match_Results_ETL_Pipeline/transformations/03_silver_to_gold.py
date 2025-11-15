@@ -10,7 +10,7 @@ import pandas as pd
   table_properties={"quality": "gold"}
 )
 def dim_team():
-  df = dlt.read("rugby_data_dev.rugby_silver.match_results")
+  df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
   return (
     df.select(col("HomeTeam").alias("TeamName"))
     .union(df.select(col("AwayTeam").alias("TeamName")))
@@ -24,7 +24,7 @@ def dim_team():
   table_properties={"quality": "gold"}
 )
 def dim_round():
-  df = dlt.read("rugby_data_dev.rugby_silver.match_results")
+  df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
   return df.select("Round").distinct().withColumn("RoundId", monotonically_increasing_id())
 
 @dlt.table(
@@ -33,8 +33,18 @@ def dim_round():
   table_properties={"quality": "gold"}
 )
 def dim_season():
-  df = dlt.read("rugby_data_dev.rugby_silver.match_results")
+  df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
   return df.select("Season").distinct().withColumn("SeasonId", monotonically_increasing_id())
+
+@dlt.table(
+  name = "rugby_data_dev.rugby_gold.dim_competition",
+  comment = "Competition Dimension table",
+  table_properties={"quality": "gold"}
+)
+
+def dim_competition():
+  df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
+  return df.select("Competition").distinct().withColumn("competitionId", monotonically_increasing_id())
 
 @dlt.table(
   name="rugby_data_dev.rugby_gold.fact_match",
@@ -42,10 +52,11 @@ def dim_season():
   table_properties={"quality": "gold"}
 )
 def fact_match():
-  match = dlt.read("rugby_data_dev.rugby_silver.match_results").alias("match")
+  match = dlt.read("rugby_data_dev.rugby_silver.match_results_silver").alias("match")
   team_dim = dlt.read("rugby_data_dev.rugby_gold.dim_teams")
   round_dim = dlt.read("rugby_data_dev.rugby_gold.dim_round").alias("rd")
   season_dim = dlt.read("rugby_data_dev.rugby_gold.dim_season").alias("sd")
+  competition_dim = dlt.read("rugby_data_dev.rugby_gold.dim_competition").alias("cm")
 
   fact = (
     match
@@ -53,6 +64,7 @@ def fact_match():
     .join(team_dim.alias("at"), col("match.AwayTeam") == col("at.TeamName"), "left")
     .join(round_dim, col("match.Round") == col("rd.Round"), "left")
     .join(season_dim, col("match.Season") == col("sd.Season"), "left")
+    .join(competition_dim, col("match.Competition") == col("cm.Competition"), "left")
     .select(
       col("match.MatchId"),
       col("ht.TeamId").alias("HomeTeamId"),
@@ -62,6 +74,8 @@ def fact_match():
       col("match.HomeScore"),
       col("match.AwayScore"),
       col("match.Result"),
+      col("match.date"),
+      col("cm.competitionId"),
       col("match.HomePointsDifference"),
       col("match.AwayPointsDifference")
     )
@@ -74,7 +88,7 @@ def fact_match():
   table_properties={"quality": "gold"}
 )
 def fact_elo_ratings():
-  df = dlt.read("rugby_data_dev.rugby_silver.match_results")
+  df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
   pdf = (
     df.select("MatchId", "Season", "Round", "HomeTeam", "AwayTeam", "Result")
     .orderBy("Season", "Round")
