@@ -1,148 +1,182 @@
-MatchId,HomeTeam,AwayTeam,Season,Round,HomeScore,AwayScore
-1,worcester,northampton,15/16,1,13,12
-2,newcastle,gloucester,15/16,1,27,39
-3,harlequins,wasps,15/16,1,26,21
-4,saracens,sale,15/16,1,41,3
-5,bath,exeter-chiefs,15/16,1,19,17
-6,london-irish,leicester,15/16,1,16,28
-7,gloucester,saracens,15/16,2,15,17
-8,sale,worcester,15/16,2,27,13
-9,wasps,bath,15/16,2,16,9
-10,northampton,newcastle,15/16,2,42,16
-11,exeter-chiefs,london-irish,15/16,2,38,11
-12,leicester,harlequins,15/16,2,22,19
-13,saracens,london-irish,15/16,3,24,14
-14,gloucester,worcester,15/16,3,24,22
-15,bath,harlequins,15/16,3,28,38
-16,sale,northampton,15/16,3,20,13
-17,newcastle,exeter-chiefs,15/16,3,3,41
-18,leicester,wasps,15/16,3,24,16
-19,harlequins,sale,15/16,4,16,14
-20,worcester,newcastle,15/16,4,28,20
-21,northampton,saracens,15/16,4,6,12
-22,london-irish,bath,15/16,4,14,45
-23,exeter-chiefs,leicester,15/16,4,19,6
-24,wasps,gloucester,15/16,4,23,3
-25,northampton,gloucester,15/16,5,15,3
-26,saracens,worcester,15/16,5,48,18
-27,sale,newcastle,15/16,5,15,15
-28,london-irish,wasps,15/16,5,15,33
-29,exeter-chiefs,harlequins,15/16,5,26,25
-30,leicester,bath,15/16,5,21,11
-31,gloucester,sale,15/16,6,23,19
-32,worcester,leicester,15/16,6,20,29
-33,wasps,exeter-chiefs,15/16,6,27,41
-34,harlequins,london-irish,15/16,6,38,7
-35,bath,northampton,15/16,6,11,13
-36,newcastle,saracens,15/16,6,3,38
-37,london-irish,northampton,15/16,7,25,23
-38,leicester,newcastle,15/16,7,22,10
-39,exeter-chiefs,sale,15/16,7,33,17
-40,wasps,saracens,15/16,7,16,26
-41,harlequins,gloucester,15/16,7,39,39
-42,bath,worcester,15/16,7,21,14
-43,northampton,exeter-chiefs,15/16,8,8,3
-44,saracens,leicester,15/16,8,26,6
-45,sale,wasps,15/16,8,15,9
-46,newcastle,bath,15/16,8,19,14
-47,gloucester,london-irish,15/16,8,27,14
-48,worcester,harlequins,15/16,8,20,24
-49,leicester,northampton,15/16,9,30,27
-50,harlequins,saracens,15/16,9,39,23
-51,exeter-chiefs,gloucester,15/16,9,19,10
-52,wasps,worcester,15/16,9,32,22
-53,bath,sale,15/16,9,32,26
-54,london-irish,newcastle,15/16,9,20,15
-55,northampton,wasps,15/16,10,11,24
-56,saracens,bath,15/16,10,19,13
-57,sale,london-irish,15/16,10,38,10
-58,gloucester,leicester,15/16,10,18,19
-59,worcester,exeter-chiefs,15/16,10,15,30
-60,newcastle,harlequins,15/16,10,26,19
-61,bath,gloucester,15/16,11,11,15
-62,wasps,newcastle,15/16,11,9,8
-63,leicester,sale,15/16,11,3,10
-64,harlequins,northampton,15/16,11,23,27
-65,london-irish,worcester,15/16,11,20,13
-66,exeter-chiefs,saracens,15/16,11,11,14
-67,newcastle,leicester,15/16,12,26,14
-68,worcester,bath,15/16,12,14,16
-69,sale,exeter-chiefs,15/16,12,23,17
-70,northampton,london-irish,15/16,12,35,7
-71,gloucester,harlequins,15/16,12,28,6
-72,saracens,wasps,15/16,12,23,64
-73,harlequins,leicester,15/16,13,25,19
-74,worcester,sale,15/16,13,31,23
-75,saracens,gloucester,15/16,13,25,12
-76,bath,wasps,15/16,13,18,24
-77,newcastle,northampton,15/16,13,26,25
-78,london-irish,exeter-chiefs,15/16,13,15,22
-79,sale,saracens,15/16,14,36,36
-80,northampton,worcester,15/16,14,38,18
-81,gloucester,newcastle,15/16,14,32,6
-82,wasps,harlequins,15/16,14,42,10
-83,leicester,london-irish,15/16,14,47,20
-84,exeter-chiefs,bath,15/16,14,26,17
-1037,newcastle,worcester,15/16,15,14,15
-1038,saracens,northampton,15/16,15,15,20
-1039,sale,harlequins,15/16,15,29,23
-1040,gloucester,wasps,15/16,15,13,10
-1041,bath,london-irish,15/16,15,25,17
-1042,leicester,exeter-chiefs,15/16,15,31,27
-1043,harlequins,bath,15/16,16,35,28
-1044,worcester,gloucester,15/16,16,28,20
-1045,wasps,leicester,15/16,16,36,24
-1046,northampton,sale,15/16,16,26,11
-1047,london-irish,saracens,15/16,16,16,26
-1048,exeter-chiefs,newcastle,15/16,16,32,17
-1049,bath,newcastle,15/16,17,21,19
-1050,harlequins,worcester,15/16,17,15,21
-1051,wasps,sale,15/16,17,39,12
-1052,london-irish,gloucester,15/16,17,23,18
-1053,leicester,saracens,15/16,17,21,13
-1054,exeter-chiefs,northampton,15/16,17,20,12
-1055,worcester,london-irish,15/16,18,12,6
-1056,saracens,exeter-chiefs,15/16,18,36,18
-1057,gloucester,bath,15/16,18,12,17
-1058,sale,leicester,15/16,18,27,20
-1059,northampton,harlequins,15/16,18,29,23
-1060,newcastle,wasps,15/16,18,20,34
-1061,bath,saracens,15/16,19,10,30
-1062,london-irish,sale,15/16,19,15,30
-1063,leicester,gloucester,15/16,19,35,30
-1064,harlequins,newcastle,15/16,19,46,25
-1065,exeter-chiefs,worcester,15/16,19,50,12
-1066,wasps,northampton,15/16,19,28,6
-1067,gloucester,exeter-chiefs,15/16,20,16,9
-1068,worcester,wasps,15/16,20,35,54
-1069,saracens,harlequins,15/16,20,22,12
-1070,northampton,leicester,15/16,20,24,30
-1071,sale,bath,15/16,20,29,17
-1072,newcastle,london-irish,15/16,20,13,6
-1073,sale,gloucester,15/16,21,11,12
-1074,northampton,bath,15/16,21,15,14
-1075,leicester,worcester,15/16,21,31,17
-1076,saracens,newcastle,15/16,21,23,14
-1077,london-irish,harlequins,15/16,21,25,32
-1078,exeter-chiefs,wasps,15/16,21,24,3
-1079,worcester,saracens,15/16,22,19,43
-1080,wasps,london-irish,15/16,22,38,12
-1081,newcastle,sale,15/16,22,15,21
-1082,harlequins,exeter-chiefs,15/16,22,24,62
-1083,gloucester,northampton,15/16,22,20,28
-1084,bath,leicester,15/16,22,38,27
-1085,saracens,leicester,15/16,SF,44,17
-1086,exeter-chiefs,wasps,15/16,SF,34,23
-1087,saracens,exeter-chiefs,15/16,F,28,20
-1088,newcastle,sale,16/17,1,19,17
-1089,gloucester,leicester,16/17,1,31,38
-1090,saracens,worcester,16/17,1,35,3
-1091,northampton,bath,16/17,1,14,18
-1092,harlequins,bristol,16/17,1,21,19
-1093,wasps,exeter-chiefs,16/17,1,25,20
-1094,worcester,gloucester,16/17,2,23,23
-1095,sale,harlequins,16/17,2,19,10
-1096,leicester,wasps,16/17,2,22,34
-1097,bath,newcastle,16/17,2,58,5
-1098,exeter-chiefs,saracens,16/17,2,13,34
-1099,bristol,northampton,16/17,2,10,32
+MatchId,HomeTeam,AwayTeam,Season,Round,HomeScore,AwayScore,Date,Competition
+1,worcester,northampton,15/16,1,13,12,16/10/2015,Gallagher Premiership
+2,newcastle,gloucester,15/16,1,27,39,16/10/2015,Gallagher Premiership
+3,harlequins,wasps,15/16,1,26,21,16/10/2015,Gallagher Premiership
+4,saracens,sale,15/16,1,41,3,17/10/2015,Gallagher Premiership
+5,bath,exeter-chiefs,15/16,1,19,17,17/10/2015,Gallagher Premiership
+6,london-irish,leicester,15/16,1,16,28,18/10/2015,Gallagher Premiership
+7,gloucester,saracens,15/16,2,15,17,23/10/2015,Gallagher Premiership
+8,sale,worcester,15/16,2,27,13,23/10/2015,Gallagher Premiership
+9,wasps,bath,15/16,2,16,9,24/10/2015,Gallagher Premiership
+10,northampton,newcastle,15/16,2,42,16,24/10/2015,Gallagher Premiership
+11,exeter-chiefs,london-irish,15/16,2,38,11,24/10/2015,Gallagher Premiership
+12,leicester,harlequins,15/16,2,22,19,25/10/2025,Gallagher Premiership
+13,saracens,london-irish,15/16,3,24,14,31/10/2015,Gallagher Premiership
+14,gloucester,worcester,15/16,3,24,22,31/10/2015,Gallagher Premiership
+15,bath,harlequins,15/16,3,28,38,31/10/2015,Gallagher Premiership
+16,sale,northampton,15/16,3,20,13,01/11/2015,Gallagher Premiership
+17,newcastle,exeter-chiefs,15/16,3,3,41,01/11/2015,Gallagher Premiership
+18,leicester,wasps,15/16,3,24,16,01/11/2015,Gallagher Premiership
+19,harlequins,sale,15/16,4,16,14,06/11/2015,Gallagher Premiership
+20,worcester,newcastle,15/16,4,28,20,07/11/2015,Gallagher Premiership
+21,northampton,saracens,15/16,4,6,12,07/11/2015,Gallagher Premiership
+22,london-irish,bath,15/16,4,14,45,07/11/2015,Gallagher Premiership
+23,exeter-chiefs,leicester,15/16,4,19,6,07/11/2015,Gallagher Premiership
+24,wasps,gloucester,15/16,4,23,3,08/11/2015,Gallagher Premiership
+25,northampton,gloucester,15/16,5,15,3,27/11/2015,Gallagher Premiership
+26,saracens,worcester,15/16,5,48,18,28/11/2015,Gallagher Premiership
+27,sale,newcastle,15/16,5,15,15,28/11/2015,Gallagher Premiership
+28,london-irish,wasps,15/16,5,15,33,28/11/2015,Gallagher Premiership
+29,exeter-chiefs,harlequins,15/16,5,26,25,28/11/2015,Gallagher Premiership
+30,leicester,bath,15/16,5,21,11,28/11/2015,Gallagher Premiership
+31,gloucester,sale,15/16,6,23,19,04/12/2015,Gallagher Premiership
+32,worcester,leicester,15/16,6,20,29,05/12/2015,Gallagher Premiership
+33,wasps,exeter-chiefs,15/16,6,27,41,05/12/2015,Gallagher Premiership
+34,harlequins,london-irish,15/16,6,38,7,05/12/2015,Gallagher Premiership
+35,bath,northampton,15/16,6,11,13,05/12/2015,Gallagher Premiership
+36,newcastle,saracens,15/16,6,3,38,06/12/2015,Gallagher Premiership
+37,london-irish,northampton,15/16,7,25,23,26/12/2015,Gallagher Premiership
+38,leicester,newcastle,15/16,7,22,10,26/12/2015,Gallagher Premiership
+39,exeter-chiefs,sale,15/16,7,33,17,26/12/2015,Gallagher Premiership
+40,wasps,saracens,15/16,7,16,26,27/12/2015,Gallagher Premiership
+41,harlequins,gloucester,15/16,7,39,39,27/12/2015,Gallagher Premiership
+42,bath,worcester,15/16,7,21,14,27/12/2015,Gallagher Premiership
+43,northampton,exeter-chiefs,15/16,8,8,3,01/01/2016,Gallagher Premiership
+44,saracens,leicester,15/16,8,26,6,02/01/2016,Gallagher Premiership
+45,sale,wasps,15/16,8,15,9,02/01/2016,Gallagher Premiership
+46,newcastle,bath,15/16,8,19,14,02/01/2016,Gallagher Premiership
+47,gloucester,london-irish,15/16,8,27,14,02/01/2016,Gallagher Premiership
+48,worcester,harlequins,15/16,8,20,24,03/01/2016,Gallagher Premiership
+49,leicester,northampton,15/16,9,30,27,09/01/2016,Gallagher Premiership
+50,harlequins,saracens,15/16,9,39,23,09/01/2016,Gallagher Premiership
+51,exeter-chiefs,gloucester,15/16,9,19,10,09/01/2016,Gallagher Premiership
+52,wasps,worcester,15/16,9,32,22,10/01/2016,Gallagher Premiership
+53,bath,sale,15/16,9,32,26,23/04/2016,Gallagher Premiership
+54,london-irish,newcastle,15/16,9,20,15,10/01/2016,Gallagher Premiership
+55,northampton,wasps,15/16,10,11,24,29/01/2016,Gallagher Premiership
+56,saracens,bath,15/16,10,19,13,30/01/2016,Gallagher Premiership
+57,sale,london-irish,15/16,10,38,10,30/01/2016,Gallagher Premiership
+58,gloucester,leicester,15/16,10,18,19,30/01/2016,Gallagher Premiership
+59,worcester,exeter-chiefs,15/16,10,15,30,31/01/2016,Gallagher Premiership
+60,newcastle,harlequins,15/16,10,26,19,31/01/2016,Gallagher Premiership
+61,bath,gloucester,15/16,11,11,15,05/02/2016,Gallagher Premiership
+62,wasps,newcastle,15/16,11,9,8,06/02/2016,Gallagher Premiership
+63,leicester,sale,15/16,11,3,10,06/02/2016,Gallagher Premiership
+64,harlequins,northampton,15/16,11,23,27,06/02/2016,Gallagher Premiership
+65,london-irish,worcester,15/16,11,20,13,07/02/2016,Gallagher Premiership
+66,exeter-chiefs,saracens,15/16,11,11,14,07/02/2016,Gallagher Premiership
+67,newcastle,leicester,15/16,12,26,14,12/02/2016,Gallagher Premiership
+68,worcester,bath,15/16,12,14,16,13/02/2016,Gallagher Premiership
+69,sale,exeter-chiefs,15/16,12,23,17,13/02/2016,Gallagher Premiership
+70,northampton,london-irish,15/16,12,35,7,13/02/2016,Gallagher Premiership
+71,gloucester,harlequins,15/16,12,28,6,13/02/2016,Gallagher Premiership
+72,saracens,wasps,15/16,12,23,64,14/02/2016,Gallagher Premiership
+73,harlequins,leicester,15/16,13,25,19,19/02/2016,Gallagher Premiership
+74,worcester,sale,15/16,13,31,23,20/02/2016,Gallagher Premiership
+75,saracens,gloucester,15/16,13,25,12,20/02/2016,Gallagher Premiership
+76,bath,wasps,15/16,13,18,24,20/02/2016,Gallagher Premiership
+77,newcastle,northampton,15/16,13,26,25,21/02/2016,Gallagher Premiership
+78,london-irish,exeter-chiefs,15/16,13,15,22,21/02/2016,Gallagher Premiership
+79,sale,saracens,15/16,14,36,36,27/02/2016,Gallagher Premiership
+80,northampton,worcester,15/16,14,38,18,27/02/2016,Gallagher Premiership
+81,gloucester,newcastle,15/16,14,32,6,27/02/2016,Gallagher Premiership
+82,wasps,harlequins,15/16,14,42,10,28/02/2016,Gallagher Premiership
+83,leicester,london-irish,15/16,14,47,20,28/02/2016,Gallagher Premiership
+84,exeter-chiefs,bath,15/16,14,26,17,28/02/2016,Gallagher Premiership
+1037,newcastle,worcester,15/16,15,14,15,04/03/2016,Gallagher Premiership
+1038,saracens,northampton,15/16,15,15,20,05/03/2016,Gallagher Premiership
+1039,sale,harlequins,15/16,15,29,23,05/03/2016,Gallagher Premiership
+1040,gloucester,wasps,15/16,15,13,10,05/03/2016,Gallagher Premiership
+1041,bath,london-irish,15/16,15,25,17,05/03/2016,Gallagher Premiership
+1042,leicester,exeter-chiefs,15/16,15,31,27,06/03/2016,Gallagher Premiership
+1043,harlequins,bath,15/16,16,35,28,11/03/2016,Gallagher Premiership
+1044,worcester,gloucester,15/16,16,28,20,12/03/2016,Gallagher Premiership
+1045,wasps,leicester,15/16,16,36,24,12/03/2016,Gallagher Premiership
+1046,northampton,sale,15/16,16,26,11,12/03/2016,Gallagher Premiership
+1047,london-irish,saracens,15/16,16,16,26,12/03/2016,Gallagher Premiership
+1048,exeter-chiefs,newcastle,15/16,16,32,17,12/03/2016,Gallagher Premiership
+1049,bath,newcastle,15/16,17,21,19,18/03/2016,Gallagher Premiership
+1050,harlequins,worcester,15/16,17,15,21,19/03/2016,Gallagher Premiership
+1051,wasps,sale,15/16,17,39,12,20/03/2016,Gallagher Premiership
+1052,london-irish,gloucester,15/16,17,23,18,20/03/2016,Gallagher Premiership
+1053,leicester,saracens,15/16,17,21,13,20/03/2016,Gallagher Premiership
+1054,exeter-chiefs,northampton,15/16,17,20,12,20/03/2016,Gallagher Premiership
+1055,worcester,london-irish,15/16,18,12,6,26/03/2016,Gallagher Premiership
+1056,saracens,exeter-chiefs,15/16,18,36,18,26/03/2016,Gallagher Premiership
+1057,gloucester,bath,15/16,18,12,17,26/03/2016,Gallagher Premiership
+1058,sale,leicester,15/16,18,27,20,27/03/2016,Gallagher Premiership
+1059,northampton,harlequins,15/16,18,29,23,27/03/2016,Gallagher Premiership
+1060,newcastle,wasps,15/16,18,20,34,27/03/2016,Gallagher Premiership
+1061,bath,saracens,15/16,19,10,30,01/04/2016,Gallagher Premiership
+1062,london-irish,sale,15/16,19,15,30,02/04/2016,Gallagher Premiership
+1063,leicester,gloucester,15/16,19,35,30,02/04/2016,Gallagher Premiership
+1064,harlequins,newcastle,15/16,19,46,25,02/04/2016,Gallagher Premiership
+1065,exeter-chiefs,worcester,15/16,19,50,12,02/04/2016,Gallagher Premiership
+1066,wasps,northampton,15/16,19,28,6,03/04/2016,Gallagher Premiership
+1067,gloucester,exeter-chiefs,15/16,20,16,9,15/04/2016,Gallagher Premiership
+1068,worcester,wasps,15/16,20,35,54,16/04/2016,Gallagher Premiership
+1069,saracens,harlequins,15/16,20,22,12,16/04/2016,Gallagher Premiership
+1070,northampton,leicester,15/16,20,24,30,16/04/2016,Gallagher Premiership
+1071,sale,bath,15/16,20,29,17,17/04/2016,Gallagher Premiership
+1072,newcastle,london-irish,15/16,20,13,6,17/04/2016,Gallagher Premiership
+1073,sale,gloucester,15/16,21,11,12,29/04/2016,Gallagher Premiership
+1074,northampton,bath,15/16,21,15,14,30/04/2016,Gallagher Premiership
+1075,leicester,worcester,15/16,21,31,17,30/04/2016,Gallagher Premiership
+1076,saracens,newcastle,15/16,21,23,14,01/05/2016,Gallagher Premiership
+1077,london-irish,harlequins,15/16,21,25,32,01/05/2016,Gallagher Premiership
+1078,exeter-chiefs,wasps,15/16,21,24,3,01/05/2016,Gallagher Premiership
+1079,worcester,saracens,15/16,22,19,43,07/05/2016,Gallagher Premiership
+1080,wasps,london-irish,15/16,22,38,12,07/05/2016,Gallagher Premiership
+1081,newcastle,sale,15/16,22,15,21,07/05/2016,Gallagher Premiership
+1082,harlequins,exeter-chiefs,15/16,22,24,62,07/05/2016,Gallagher Premiership
+1083,gloucester,northampton,15/16,22,20,28,07/05/2016,Gallagher Premiership
+1084,bath,leicester,15/16,22,38,27,07/05/2016,Gallagher Premiership
+1085,saracens,leicester,15/16,SF,44,17,21/05/2016,Gallagher Premiership
+1086,exeter-chiefs,wasps,15/16,SF,34,23,21/05/2016,Gallagher Premiership
+1087,saracens,exeter-chiefs,15/16,F,28,20,28/05/2016,Gallagher Premiership
+1088,newcastle,sale,16/17,1,19,17,02/09/2016,Gallagher Premiership
+1089,gloucester,leicester,16/17,1,31,38,02/09/2016,Gallagher Premiership
+1090,saracens,worcester,16/17,1,35,3,03/09/2016,Gallagher Premiership
+1091,northampton,bath,16/17,1,14,18,03/09/2016,Gallagher Premiership
+1092,harlequins,bristol,16/17,1,21,19,03/09/2016,Gallagher Premiership
+1093,wasps,exeter-chiefs,16/17,1,25,20,04/09/2016,Gallagher Premiership
+1094,worcester,gloucester,16/17,2,23,23,09/09/2016,Gallagher Premiership
+1095,sale,harlequins,16/17,2,19,10,09/09/2016,Gallagher Premiership
+1096,leicester,wasps,16/17,2,22,34,10/09/2016,Gallagher Premiership
+1097,bath,newcastle,16/17,2,58,5,10/09/2016,Gallagher Premiership
+1098,exeter-chiefs,saracens,16/17,2,13,34,11/09/2016,Gallagher Premiership
+1099,bristol,northampton,16/17,2,10,32,11/09/2016,Gallagher Premiership
+1100,sale,gloucester,16/17,3,16,26,16/09/2016,Gallagher Premiership
+1101,saracens,northampton,16/17,3,27,12,17/09/2016,Gallagher Premiership
+1102,exeter-chiefs,harlequins,16/17,3,36,25,17/09/2016,Gallagher Premiership
+1103,bath,worcester,16/17,3,37,22,17/09/2016,Gallagher Premiership
+1104,wasps,bristol,16/17,3,70,22,18/09/2016,Gallagher Premiership
+1105,newcastle,leicester,16/17,3,13,14,18/09/2016,Gallagher Premiership
+1106,bristol,exeter-chiefs,16/17,4,17,41,23/09/2016,Gallagher Premiership
+1107,worcester,sale,16/17,4,34,34,24/09/2016,Gallagher Premiership
+1108,northampton,wasps,16/17,4,15,20,24/09/2016,Gallagher Premiership
+1109,harlequins,saracens,16/17,4,17,10,24/09/2016,Gallagher Premiership
+1110,gloucester,newcastle,16/17,4,13,18,24/09/2016,Gallagher Premiership
+1111,leicester,bath,16/17,4,34,14,24/09/2016,Gallagher Premiership
+1112,northampton,exeter-chiefs,16/17,5,20,19,30/09/2016,Gallagher Premiership
+1113,bristol,saracens,16/17,5,0,39,30/09/2016,Gallagher Premiership
+1114,sale,leicester,16/17,5,34,30,01/10/2016,Gallagher Premiership
+1115,gloucester,bath,16/17,5,6,15,01/10/2016,Gallagher Premiership
+1116,worcester,newcastle,16/17,5,11,9,02/10/2016,Gallagher Premiership
+1117,wasps,harlequins,16/17,5,47,18,02/10/2016,Gallagher Premiership
+1118,bath,sale,16/17,6,30,3,07/10/2016,Gallagher Premiership
+1119,newcastle,bristol,16/17,6,19,14,08/10/2016,Gallagher Premiership
+1120,leicester,worcester,16/17,6,34,13,08/10/2016,Gallagher Premiership
+1121,harlequins,northampton,16/17,6,20,9,08/10/2016,Gallagher Premiership
+1122,exeter-chiefs,gloucester,16/17,6,27,27,08/10/2016,Gallagher Premiership
+1123,saracens,wasps,16/17,6,30,14,09/10/2016,Gallagher Premiership
+1124,northampton,gloucester,16/17,7,23,20,28/10/2016,Gallagher Premiership
+1125,saracens,leicester,16/17,7,24,10,29/10/2016,Gallagher Premiership
+1126,harlequins,worcester,16/17,7,36,14,29/10/2016,Gallagher Premiership
+1127,wasps,newcastle,16/17,7,31,6,30/10/2016,Gallagher Premiership
+1128,exeter-chiefs,bath,16/17,7,10,13,30/10/2016,Gallagher Premiership
+1129,bristol,sale,16/17,7,13,31,30/10/2016,Gallagher Premiership
+1130,worcester,northampton,16/17,8,17,18,18/11/2016,Gallagher Premiership
+1131,newcastle,exeter-chiefs,16/17,8,19,32,18/11/2016,Gallagher Premiership
+1132,bath,bristol,16/17,8,16,9,18/11/2016,Gallagher Premiership
+1133,gloucester,wasps,16/17,8,36,18,19/11/2016,Gallagher Premiership
