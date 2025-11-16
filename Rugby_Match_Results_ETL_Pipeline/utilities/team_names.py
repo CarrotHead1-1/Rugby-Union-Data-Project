@@ -41,7 +41,7 @@ team_map = {
     "newcastle falcons": "newcastle",
     "newcastle rugby club": "newcastle",
     "falcons": "newcastle",
-    "newcastle red bulls": "newcastke",
+    "newcastle red bulls": "newcastle",
     "newcastle red bulls rugby club": "newcastle"
 }
 
