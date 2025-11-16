@@ -3,23 +3,15 @@ import pandas as pd
 #base elo is 1500 
 # k factor is 35
 
-#original code 
-'''
 eloRatings = {}
 history = {}
 
 def getElo(team):
     return eloRatings.get(team, 1500)
-'''
 
-#stateful updates
-def getElo(team, state):
-    return state.get(team, 1500)
-
-#added state valiable 
-def updateElo(home, away, result, state):
-    homeElo = getElo(home, state)
-    awayElo = getElo(away, state)
+def updateElo(home, away, result):
+    homeElo = getElo(home)
+    awayElo = getElo(away)
     
     # K factor
     K = 35

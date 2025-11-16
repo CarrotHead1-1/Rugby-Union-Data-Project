@@ -44,7 +44,7 @@ def dim_season():
 
 def dim_competition():
   df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
-  return df.select("Competition").distinct().withColumn("competitionId", monotonically_increasing_id())
+  return df.select("Competition").distinct().withColumn("CompetitionId", monotonically_increasing_id())
 
 @dlt.table(
   name="rugby_data_dev.rugby_gold.fact_match",
@@ -71,11 +71,11 @@ def fact_match():
       col("at.TeamId").alias("AwayTeamId"),
       col("sd.SeasonId"),
       col("rd.RoundId"),
+      col("match.Date"),
       col("match.HomeScore"),
       col("match.AwayScore"),
       col("match.Result"),
-      col("match.date"),
-      col("cm.competitionId"),
+      col("cm.CompetitionId"),
       col("match.HomePointsDifference"),
       col("match.AwayPointsDifference")
     )
@@ -90,8 +90,8 @@ def fact_match():
 def fact_elo_ratings():
   df = dlt.read("rugby_data_dev.rugby_silver.match_results_silver")
   pdf = (
-    df.select("MatchId", "Season", "Round", "HomeTeam", "AwayTeam", "Result")
-    .orderBy("Season", "Round")
+    df.select("MatchId", "Season", "Round","Date", "HomeTeam", "AwayTeam", "Result")
+    .orderBy("Season", "Round", "Date")
     .toPandas()
   )
 
