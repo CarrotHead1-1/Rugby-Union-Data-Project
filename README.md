@@ -18,8 +18,8 @@ The pipeline includes:
 Bronze → Silver → Gold
 ```
 
-* **Bronze:** Raw ingestion from CSV.
-* **Silver:** Data cleaning, validation, and enrichment.
+* **Bronze:** Raw ingestion from CSV with minimal transformation.
+* **Silver:** Data cleaning, validation, standardization, and enrichment.
 * **Gold:** Analytical tables including dimensions and facts, with Elo calculations.
 
 ---
@@ -27,168 +27,323 @@ Bronze → Silver → Gold
 ## Project Structure
 
 ```
-├─ rugby_etl_project/
-|  ├─ transformations/
-|  |   ├─ 01_bronze_ingestion.py
-|  |   ├─ 02_bronze_to_silver.py
-|  |   ├─ 03_silver_to_gold.py
-|  ├─ utilities/
-|  |   ├─ __init__.py
-|  |   ├─ competition_names.py   # update when new competitions are added
-|  |   ├─ elo.py
-|  |   ├─ team_names.py          # map of team name variants, update when new teams are added
+├─ Rugby_Match_Results_ETL_Pipeline/
+│  ├─ transformations/
+│  │   ├─ 01_bronze_ingestion.py          # DLT: Streams CSV files into Bronze Delta table
+│  │   ├─ 02_bronze_to_silver.py          # DLT: Cleanses and enriches data into Silver
+│  │   ├─ 03_silver_to_gold.py            # DLT: Creates dimensions, facts, and Elo ratings
+│  ├─ utilities/
+│  │   ├─ __init__.py
+│  │   ├─ competition_names.py            # Maps competition name variants to standard names
+│  │   ├─ elo.py                          # Elo rating calculation functions
+│  │   ├─ team_names.py                   # Maps team name variants to standard names
 ├─ scripts/
-|    ├─ 00_ingestion_from_github.py  # manually run currently
-|    ├─ Rugby_Visualisation.ivdash.json  # limited dashboard linked to notebooks
-|    ├─ basics_and_testing/
-|    |   ├─ 01_pyspark_basics.ipynb
-|    |   ├─ 02_pyspark_basic_data_processing.ipynb
-|    ├─ python_sql_pipeline_notebooks/
-|    │  ├─ 01_bronze_ingestion.ipynb
-|    │  ├─ 02_silver_transformation.ipynb
-|    │  ├─ 03_elo_calculation.ipynb
-|    │  └─ 04_gold_modeling.ipynb
+│  ├─ 00_ingestion_from_github.py         # Manual script to copy updated CSVs to landing zone
+│  ├─ Rugby_Visualisation.lvdash.json     # Basic dashboard configuration
+│  ├─ basics_and_testing/                 # Exploratory notebooks for PySpark learning
+│  │   ├─ 01_pyspark_basics.ipynb
+│  │   ├─ 02_pyspark_basic_data_processing.ipynb
+│  ├─ python_etl_pipeline/                # Alternative ETL implementation using notebooks
+│  │   ├─ 01_bronze_ingest.ipynb          # Notebook: Manual CSV ingestion to Bronze
+│  │   ├─ 02_silver_transformations.ipynb # Notebook: Data cleaning and enrichment
+│  │   ├─ 03_elo_calculation.ipynb        # Notebook: Sequential Elo rating calculation
+│  │   └─ 04_star_schema_gold_layer.ipynb # Notebook: Creates Gold dimensional model
 ├─ datasets/
-│  ├─ matchResults2015-2018.csv
-│  ├─ matchResults2018-2026.csv
-│  └─ premiershipMatchData22-26.csv
+│  ├─ match_results/
+│  │   ├─ matchResults2015-2018.csv       # Historical match results with Date field
+│  │   ├─ matchResults2018-2026.csv       # Recent match results (no Date field)
+│  ├─ match_data/
+│  │   └─ premiershipMatchData22-26.csv   # Advanced match statistics (22-26 seasons)
 └─ README.md
 ```
 
 ---
 
-## Rugby Match Results Pipeline
+## Delta Live Tables (DLT) Pipeline
 
-This project implements a **Delta Live Table (DLT) pipeline** for rugby match results using **Databricks**.
-The pipeline ingests, cleans, standardizes, enriches, and calculates sequential Elo ratings for rugby matches.
+The primary ETL pipeline is implemented as a **Delta Live Tables (DLT) pipeline** for automated, streaming data processing.
 
-### Bronze Layer
+### Bronze Layer (`01_bronze_ingestion.py`)
 
-**Purpose:** Raw ingestion with minimal transformation.
+**Purpose:** Raw data ingestion with minimal transformation.
 
-* Reads match result CSVs from the landing folder (`/rugby_landing/raw_data`).
-* Creates the Bronze Delta table: `rugby_data_dev.rugby_bronze.match_results_bronze`.
-* No transformations beyond initial ingestion.
-* Table properties: `quality=bronze`.
+* **Input:** CSV files from `/Volumes/rugby_data_dev/rugby_landing/raw_data`
+* **Output:** `rugby_data_dev.rugby_bronze.match_results_bronze` (Delta table)
+* **Process:**
+  - Streams CSV files using `cloudFiles` format
+  - Auto-infers schema from CSV headers
+  - No data validation or transformation
+* **Table Properties:** `quality=bronze`
 
-**Key Features:**
+### Silver Layer (`02_bronze_to_silver.py`)
 
-* Stream ingestion using DLT.
-* Supports multiple CSV formats.
-* Schema is explicitly cast in Silver stage.
+**Purpose:** Cleaned, validated, and enriched data ready for analysis.
 
-### Silver Layer
+* **Input:** `rugby_data_dev.rugby_bronze.match_results_bronze`
+* **Output:** `rugby_data_dev.rugby_silver.match_results_silver` (Delta table)
+* **Process:**
+  - **Data Quality Checks:**
+    - Drops records with null values in essential columns (HomeTeam, AwayTeam, Season, Round, Scores)
+    - Validates non-negative scores
+    - Ensures HomeTeam ≠ AwayTeam
+  - **Standardization:**
+    - Normalizes team names using `utilities/team_names.py` mapping
+    - Normalizes competition names using `utilities/competition_names.py` mapping
+    - Converts string dates to `DateType` (supports multiple date formats)
+  - **Enrichment:**
+    - Calculates `Result` field (HomeWin/AwayWin/Draw)
+    - Calculates `HomePointsDifference` and `AwayPointsDifference`
+  - **Deduplication:** Drops duplicate matches based on `MatchId`
+  - **Schema Enforcement:** Explicitly casts columns to correct types (IntegerType, StringType, DateType)
+* **Table Properties:** `quality=silver`
+* **Expectations:** Uses DLT `@dlt.expect` and `@dlt.expect_or_drop` for data quality validation
 
-**Purpose:** Cleaned, validated, and enriched data.
+### Gold Layer (`03_silver_to_gold.py`)
 
-* Reads from Bronze table.
-* Performs **data quality checks**:
+**Purpose:** Analytical-ready dimensional model with calculated metrics.
 
-  * Null checks for essential columns.
-  * Non-negative scores.
-  * Ensures HomeTeam ≠ AwayTeam.
-* Normalizes team and competition names using utility modules (`team_names`, `competition_names`).
-* Drops duplicate matches based on `MatchId`.
-* Calculates:
+* **Input:** `rugby_data_dev.rugby_silver.match_results_silver`
+* **Output:** Multiple Gold tables
+* **Process:**
 
-  * `Result` (`HomeWin`, `AwayWin`, `Draw`)
-  * `HomePointsDifference` and `AwayPointsDifference`
-* Converts string dates into `DateType`.
-* Creates Silver Delta table: `rugby_data_dev.rugby_silver.match_results_silver`.
-* Table properties: `quality=silver`.
+  **Dimension Tables:**
+  - `dim_teams` – Distinct team names with generated TeamId
+  - `dim_round` – Distinct rounds with generated RoundId
+  - `dim_season` – Distinct seasons with generated SeasonId
+  - `dim_competition` – Distinct competitions with generated CompetitionId
 
-### Gold Layer
+  **Fact Tables:**
+  - `fact_match` – Central fact table linking matches to all dimensions
+    - Joins Silver data with all dimension tables
+    - Includes scores, results, and point differentials
+  
+  - `fact_elo_ratings` – Sequential Elo rating calculations per match
+    - **Base Elo:** 1500 for new teams
+    - **K-factor:** 35
+    - Converts to Pandas for sequential processing (Elo requires ordered calculation)
+    - Tracks: EloBefore, EloAfter, EloChange for both home and away teams
+    - Records complete Elo history for each match
 
-**Purpose:** Analytical-ready tables for reporting and dashboards.
-
-* **Dimension Tables:**
-
-  * `dim_teams`
-  * `dim_round`
-  * `dim_season`
-  * `dim_competition`
-* **Fact Tables:**
-
-  * `fact_match` — links matches with dimension tables.
-  * `fact_elo_ratings` — sequential Elo ratings for each match.
-
-**Elo Calculations:**
-
-* Base rating: 1500
-* K-factor: 35
-* Sequential update for each match
-* Tracks Elo history per team
-
-Table properties: `quality=gold`.
-
----
-
-## Utilities
-
-**Purpose:** Reusable Python modules for DLT transformations.
-
-1. **Team Name Normalization (`team_names.py`)**
-
-   * Standardizes team names across data sources.
-
-2. **Competition Name Normalization (`competition_names.py`)**
-
-   * Standardizes competition names.
-
-3. **Elo Calculations (`elo.py`)**
-
-   * Maintains Elo ratings and history.
-   * Provides `updateElo` and `getElo` functions.
-   * Handles match results sequentially for accurate rating updates.
+* **Table Properties:** `quality=gold`
+* **Note:** Elo calculations use `utilities/elo.py` functions and require sequential processing
 
 ---
 
-## Scripts ETL Pipeline Overview
+## Utility Modules
 
-### Bronze Layer
+Located in `utilities/`, these modules provide reusable functions for the DLT pipeline:
 
-* **Notebook:** `01_bronze_ingestion.ipynb`
-* **Objective:** Raw data ingestion
-* Actions: Load CSVs, basic quality checks, add metadata, save as Bronze Delta tables.
+### `team_names.py`
+- **Purpose:** Standardizes team names across data sources
+- **Implementation:** 
+  - Contains dictionary mapping variants to canonical names
+  - Example: "Bath Rugby", "Bath Rugby Club" → "bath"
+  - Applied to both HomeTeam and AwayTeam columns
+  - Includes lowercase conversion and whitespace trimming
 
-### Silver Layer
+### `competition_names.py`
+- **Purpose:** Standardizes competition names
+- **Implementation:**
+  - Maps competition variants to standard names
+  - Example: "Gallagher Premiership", "Aviva Premiership" → "Premiership"
+  - **Note:** Update this file when new competitions are added
 
-* **Notebook:** `02_silver_transformation.ipynb`
-* **Objective:** Clean, standardize, enrich
-* Actions: Remove nulls/duplicates, standardize names, calculate results, add Silver metadata, save as Silver Delta tables.
-
-### Elo Calculation
-
-* **Notebook:** `03_elo_calculation.ipynb`
-* **Objective:** Compute Elo ratings sequentially
-* Actions: Load Silver matches, update Elo ratings, track history, save to Gold Elo table.
-
-### Gold Layer
-
-* **Notebook:** `04_gold_modeling.ipynb`
-* **Objective:** Analytical-ready tables
-* Actions: Create dimensions and fact tables, join with Silver and Elo data, add audit metadata.
+### `elo.py`
+- **Purpose:** Elo rating system implementation
+- **Functions:**
+  - `getElo(team)` – Retrieves team's current rating (default: 1500)
+  - `updateElo(home, away, result)` – Calculates new ratings based on match outcome
+  - `getHistory()` – Returns complete rating history for all teams
+- **Algorithm:**
+  - Base rating: 1500
+  - K-factor: 35
+  - Expected score formula: 1 / (1 + 10^((opponentElo - teamElo) / 400))
+  - Rating adjustment: K × (actualResult - expectedResult)
 
 ---
 
-## Notebooks Description
+## Notebook-Based ETL Pipeline (Alternative Implementation)
 
-| Notebook                         | Purpose                                                                                            |
-| -------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `01_bronze_ingestion.ipynb`      | Ingest raw CSV data to Bronze Delta tables, add minimal metadata.                                  |
-| `02_silver_transformation.ipynb` | Clean and standardize data, remove duplicates/nulls, calculate match results, enrich Silver layer. |
-| `03_elo_calculation.ipynb`       | Calculate Elo ratings sequentially, track history, save to Gold Elo table.                         |
-| `04_gold_modeling.ipynb`         | Create dimensional and fact tables for analytics, join Silver data with Elo ratings.               |
+The `scripts/python_etl_pipeline/` directory contains an **alternative notebook-based implementation** of the ETL pipeline for manual or ad-hoc processing.
+
+### `01_bronze_ingest.ipynb`
+
+**Purpose:** Manual CSV ingestion into Bronze layer
+
+* **Process:**
+  - Defines explicit schemas for both match results and match data
+  - Reads CSVs from landing volume using `spark.read.csv()`
+  - Performs basic quality checks (record counts, null value detection)
+  - Adds metadata columns (ingestTimestamp, sourceFile)
+  - Writes to Bronze Delta tables with `mode='overwrite'`
+* **Output Tables:**
+  - `rugby_data_dev.rugby_bronze.match_results_raw_2015_2018`
+  - `rugby_data_dev.rugby_bronze.match_results_raw_2018_2026`
+  - `rugby_data_dev.rugby_bronze.match_results_raw_2022_2026`
+
+### `02_silver_transformations.ipynb`
+
+**Purpose:** Data cleaning, validation, and enrichment
+
+* **Match Results Processing:**
+  - Drops null values in essential columns
+  - Merges 2015-2018 and 2018-2026 datasets using `unionByName()`
+  - Detects and removes duplicates
+  - Validates data quality (non-negative scores, valid teams)
+  - Standardizes team names using manual dictionary mapping
+  - Calculates derived fields (Result, PointsDifferences)
+  - Adds Silver metadata (lastUpload, pipelineStage)
+
+* **Match Data Processing (2022-2026):**
+  - Similar cleaning and validation steps
+  - Additional validation for advanced statistics:
+    - Conversions ≤ Tries
+    - PostContactMetres ≤ MetresGained (capped if invalid)
+    - Territory percentages sum to 100%
+    - Possession percentages sum to 100%
+    - Ruck speed distributions sum to 100%
+    - Score validation: (Tries × 5) + (Conversions × 2) + (PenaltyGoals × 3)
+
+* **Output Tables:**
+  - `rugby_data_dev.rugby_silver.match_results_notebook`
+  - `rugby_data_dev.rugby_silver.match_results_data`
+
+### `03_elo_calculation.ipynb`
+
+**Purpose:** Sequential Elo rating calculation
+
+* **Process:**
+  - Loads Silver match results
+  - Converts Spark DataFrame to Pandas (required for sequential processing)
+  - Orders matches by Season and Round
+  - Iterates through each match sequentially:
+    - Retrieves current Elo ratings (default: 1500 for new teams)
+    - Calculates expected outcomes
+    - Updates ratings based on actual result
+    - Tracks rating changes
+  - Rounds all Elo values to 1 decimal place
+  - Converts back to Spark DataFrame
+  - Writes to Gold Elo table
+
+* **Output Table:** `rugby_data_dev.rugby_gold.elo_ratings`
+
+* **Implementation Details:**
+  - Uses Python dictionaries to maintain rating state
+  - K-factor: 35
+  - Result encoding: Home Win = 1, Away Win = 0, Draw = 0.5
+  - Expected score: 1 / (1 + 10^((awayElo - homeElo) / 400))
+
+### `04_star_schema_gold_layer.ipynb`
+
+**Purpose:** Creates dimensional model for analytics
+
+* **Process:**
+  - **Dimension Creation:**
+    - Extracts distinct values from Silver table
+    - Generates surrogate keys using `row_number()`
+    - Creates separate dimension tables for Result, Season, Teams, and Round
+  
+  - **Fact Table Creation:**
+    - Joins Silver match results with all dimension tables
+    - Joins Elo ratings table to include rating metrics
+    - Replaces natural keys with surrogate keys (foreign keys)
+    - Adds Gold metadata (last_upload, pipelineStage)
+
+* **Output Tables:**
+  - `rugby_data_dev.rugby_gold.Result_Dim`
+  - `rugby_data_dev.rugby_gold.Season_Dim`
+  - `rugby_data_dev.rugby_gold.Teams_Dim`
+  - `rugby_data_dev.rugby_gold.Round_Dim`
+  - `rugby_data_dev.rugby_gold.Match_Fact`
+
+* **Star Schema Design:**
+  - Central fact table: Match_Fact
+  - Dimension tables connected via foreign keys
+  - Includes both dimensional attributes and Elo metrics
+  - Optimized for analytical queries
+
+---
+
+## Supporting Scripts
+
+### `00_ingestion_from_github.py`
+
+**Purpose:** Manual data refresh script
+
+* **Process:**
+  - Lists all CSV files in the repository datasets folder
+  - Removes existing CSVs from landing zone
+  - Copies updated CSVs from repository to landing zone
+  - Preserves original filenames
+* **Usage:** Run manually when datasets are updated in the repository
+* **Paths:**
+  - Source: `dbfs:/Workspace/Users/.../datasets/match_results`
+  - Target: `dbfs:/Volumes/rugby_data_dev/rugby_landing/raw_data`
+
+### `Rugby_Visualisation.lvdash.json`
+
+**Purpose:** Basic Lakeview dashboard configuration
+
+* **Datasets:**
+  - Total Wins Per Season (aggregated by Result type)
+  - Wins by Each Team (includes filters by team and season)
+* **Visualizations:**
+  - Bar chart: Total wins across all seasons
+  - Line chart: Wins per team over time
+  - Global filter: Team selector
+* **Note:** Limited dashboard - production dashboards should be created separately
+
+### `basics_and_testing/` Notebooks
+
+Exploratory notebooks used during development:
+
+* **`01_pyspark_basics.ipynb`:**
+  - Basic PySpark operations (read, show, groupBy, select)
+  - Reading from Unity Catalog
+  - Schema exploration
+
+* **`02_pyspark_basic_data_processing.ipynb`:**
+  - DataFrame joins and unions
+  - Duplicate detection and removal
+  - Aggregations and window functions
+  - Team-level statistics calculation
 
 ---
 
 ## Key Features
 
-* **Medallion Architecture:** Bronze → Silver → Gold layers for structured ETL.
-* **Data Quality Checks:** Null checks, duplicates removal, range validations, logical consistency.
-* **Team Name Standardization:** Mapping ensures consistent naming conventions.
-* **Elo Rating System:** Sequential calculation with K-factor 35.
-* **Delta Tables:** Scalable, versioned, and transactional storage using **Databricks Delta**.
+* **Medallion Architecture:** Structured Bronze → Silver → Gold layers for data quality and lineage
+* **Data Quality Checks:** Comprehensive validation at each layer with DLT expectations
+* **Team Name Standardization:** Centralized mapping ensures consistency across data sources
+* **Elo Rating System:** Sequential calculation with configurable K-factor (35) and base rating (1500)
+* **Delta Tables:** ACID transactions, time travel, and schema evolution support
+* **Dual Implementation:** Both automated DLT pipeline and manual notebook pipeline for flexibility
+* **Advanced Statistics:** Validates complex metrics like territory, possession, and ruck speeds
+* **Dimensional Modeling:** Star schema optimized for analytical queries
+
+---
+
+## Data Sources
+
+### Match Results (2015-2018)
+- **File:** `matchResults2015-2018.csv`
+- **Columns:** MatchId, HomeTeam, AwayTeam, Season, Round, HomeScore, AwayScore, Date, Competition
+- **Note:** Includes Date field in various formats
+
+### Match Results (2018-2026)
+- **File:** `matchResults2018-2026.csv`
+- **Columns:** MatchId, HomeTeam, AwayTeam, Season, Round, HomeScore, AwayScore
+- **Note:** No Date or Competition fields
+
+### Advanced Match Statistics (2022-2026)
+- **File:** `premiershipMatchData22-26.csv`
+- **Columns:** 95+ statistical fields including:
+  - Basic: MatchId, Teams, Season, Round, Scores
+  - Possession: Territory %, Possession %, Field position breakdown
+  - Attack: Line breaks, carries, meters gained, defenders beaten
+  - Set Piece: Lineout %, Scrum %, Ruck speed distribution
+  - Discipline: Penalties, cards, turnovers
+  - Scoring: Tries, conversions, penalty goals, drop goals
 
 ---
 
@@ -196,38 +351,83 @@ Table properties: `quality=gold`.
 
 ### Requirements
 
-* Databricks Runtime or Spark >= 3.2
+* Databricks Runtime (with Delta Live Tables support for DLT pipeline)
 * Python >= 3.8
-* Required packages:
+* PySpark >= 3.2
+* Required packages: `pyspark`, `pandas`, `delta-spark`
 
-```text
-pyspark
-pandas
-delta-spark
-```
+### Setup Steps
 
-### Setup
+1. **Clone Repository:**
+   ```bash
+   git clone <repository-url>
+   ```
 
-1. Clone this repository.
-2. Upload CSV files to `/data` or your landing directory.
-3. Ensure utilities folder is accessible for DLT transformations.
-4. Run the pipeline sequentially: **Bronze → Silver → Elo → Gold**.
-5. Verify Gold tables in your Databricks workspace.
+2. **Upload Datasets:**
+   - Place CSV files in `/Volumes/rugby_data_dev/rugby_landing/raw_data`
+   - Or run `scripts/00_ingestion_from_github.py` to copy from repository
+
+3. **Create Schemas:**
+   ```sql
+   CREATE SCHEMA IF NOT EXISTS rugby_data_dev.rugby_bronze;
+   CREATE SCHEMA IF NOT EXISTS rugby_data_dev.rugby_silver;
+   CREATE SCHEMA IF NOT EXISTS rugby_data_dev.rugby_gold;
+   ```
+
+4. **Run Pipeline:**
+   
+   **Option A: DLT Pipeline (Recommended)**
+   - Create DLT pipeline in Databricks
+   - Add transformation files from `transformations/` folder
+   - Configure pipeline to run on schedule or trigger manually
+   
+   **Option B: Notebook Pipeline**
+   - Run notebooks in `scripts/python_etl_pipeline/` sequentially:
+     1. `01_bronze_ingest.ipynb`
+     2. `02_silver_transformations.ipynb`
+     3. `03_elo_calculation.ipynb`
+     4. `04_star_schema_gold_layer.ipynb`
+
+5. **Verify Gold Tables:**
+   - Check `rugby_data_dev.rugby_gold` schema for dimension and fact tables
+   - Verify Elo ratings in `fact_elo_ratings` table
 
 ---
 
 ## Future Improvements
 
-* Automate ingestion for new CSV files using **Databricks Jobs**.
-* Integrate secondary datasets (`premiershipMatchData22-26.csv`) into Elo calculations.
-* Add automated **data validation tests** using **Deequ** or **Great Expectations**.
-* Refactor Elo calculation to **run entirely in Spark** for larger datasets.
-* Implement **incremental updates** for real-time ingestion.
+* **Automation:**
+  - Schedule DLT pipeline for automatic execution on new file arrival
+  - Implement incremental processing for large datasets
+  - Add job orchestration for notebook pipeline
+
+* **Data Integration:**
+  - Integrate advanced statistics (`premiershipMatchData22-26.csv`) into fact tables
+  - Add player-level statistics if data becomes available
+  - Include weather data or other external factors
+
+* **Data Quality:**
+  - Implement automated validation tests using Deequ or Great Expectations
+  - Add data quality monitoring dashboards
+  - Create alerting for data quality failures
+
+* **Performance:**
+  - Optimize Elo calculation to run entirely in Spark (avoid Pandas conversion)
+  - Implement partitioning strategy for large tables
+  - Add Z-ordering for frequently filtered columns
+
+* **Analytics:**
+  - Expand Lakeview dashboards with more visualizations
+  - Create Power BI or Tableau integrations
+  - Add ML models for match outcome prediction
+
+* **Documentation:**
+  - Add data lineage diagrams
+  - Document business rules and calculation logic
+  - Create user guide for analysts
 
 ---
 
 ## Contact
 
 * **Author:** Kieron Escott
-* **GitHub:** [username](https://github.com/username)
-* **LinkedIn:** [Profile](https://www.linkedin.com/in/username/)
