@@ -1,4 +1,31 @@
 MatchId,HomeTeam,AwayTeam,Season,Round,HomeScore,AwayScore,Date
-1,bristol,doncaster,15/16,F,32,34,25/05/2016
-2,doncaster,bristol,15/16,F,13,28,18/05/2016
-3,bristol,bedford,15/16,SF,45,19,08/05/2016
+1,bristol bears,doncaster knights,15/16,F,32,34,25/05/2016
+2,doncaster knights,bristol bears,15/16,F,13,28,18/05/2016
+3,bristol bears,bedford blues,15/16,SF,45,19,08/05/2016
+4,doncaster knights,yorshire carnegie,15/16,SF,14,17,08/05/2016
+5,bedford blues,bristol bears,15/16,SF,16,45,01/05/2016
+6,yorshire carnegie,doncaster knights,15/16,SF,17,30,01/05/2016
+7,birmingham moseley,london scottish,15/16,22,24,75,23/04/2016
+8,bedford blues,bristol bears,15/16,22,6,39,23/04/2016
+9,ealing trailfinders,rotherham titans,15/16,22,45,12,23/04/2016
+10,jersey reds,yorshire carnegie,15/16,22,0,34,23/04/2016
+11,london welsh,doncaster knights,15/16,22,24,19,23/04/2016
+12,nottingham,cornish pirates,15/16,22,55,33,23/04/2016
+13,cornish pirates,london welsh,15/16,21,38,38,17/04/2016
+14,leeds tykes,bedford blues,15/16,21,37,27,17/04/2016
+15,doncaster knights,bedford blues,15/16,21,28,24,16/04/2016
+16,ealing trailfinders,jersey reds,15/16,21,30,24,16/04/2016
+17,rotherham titans,london scottish,15/16,21,17,22,16/04/2016
+18,bristol bears,birmingham moseley,15/16,21,24,22,15/04/2016
+19,bedford blues,cornish pirates,15/16,20,54,46,02/04/2016
+20,jersey reds,rotherham titans,15/16,20,44,27,02/04/2016
+21,london scottish,bristol bears,15/16,20,16,21,02/04/2016
+22,london welsh,yorshire carnegie,15/16,20,28,31,02/04/2016
+23,birmingham moseley,doncaster knights,15/16,20,23,38,01/04/2016
+24,nottingham,ealing trailfinders,15/16,20,22,18,01/04/2016
+25,doncaster knights,bristol bears,15/16,19,29,31,27/03/2016
+26,yorshire carnegie,bedford blues,15/16,19,35,20,27/03/2016
+27,cornish pirates,birmingham moseley,15/16,19,32,0,26/03/2016
+28,ealing trailfinders,london welsh,15/16,19,16,22,26/03/2016
+29,rotherham titans,nottingham,15/16,19,22,12,26/03/2016
+30,jersey reds,london scottish,15/16,19,22,20,25/03/2016
