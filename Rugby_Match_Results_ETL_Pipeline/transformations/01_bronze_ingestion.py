@@ -1,4 +1,5 @@
 import dlt 
+from pyspark.sql.functions import current_date, input_file_name
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
 # #explict creation of the bronze schema -- currently not used, types are explictly set in the silver transformation stage
@@ -18,15 +19,25 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
 #create bronze ingestion table
 @dlt.table(
-    name = "rugby_data_dev.rugby_bronze.match_results_bronze",
+    name = "bronze_dev.default.bronze_match_results",
     comment = "Raw data from the match results",
     table_properties = {"quality": "bronze"}
 )
 
 #ingest data from csv files in rugby_landing/raw_data
 def match_results_raw():
-    return (
+    df = (
         spark.readStream.format("cloudFiles")
         .option("cloudFiles.format", "csv")
-        .load("/Volumes/rugby_data_dev/rugby_landing/raw_data")
+        .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
+        .option("cloudFiles.inferColumnTypes", "true")
+        .load("s3://rugby-data-lake-portfolio/raw/matches/")
+        #.load("/Volumes/rugby_data_dev/rugby_landing/raw_data")
     )
+
+    df = (
+        df.withColumn("_ingest_date", current_date())
+        .withColumn("souce_file", df["_metadata"]["file_path"])
+    )
+
+    return df
