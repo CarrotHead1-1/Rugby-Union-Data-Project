@@ -5,7 +5,8 @@ from pyspark.sql.functions import col, lower, trim
 competition_map = {
     'Gallagher Premiership': 'Premiership',
     'RBS 6 Nations': 'Six Nations',
-    'Aviva Premiership': 'Premiership'
+    'Aviva Premiership': 'Premiership',
+    'Championship': 'Championship'
 }
 
 def normalise_competition_names(df):
