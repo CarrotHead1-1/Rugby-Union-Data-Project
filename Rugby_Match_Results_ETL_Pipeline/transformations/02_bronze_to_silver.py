@@ -1,5 +1,5 @@
 import dlt 
-from pyspark.sql.functions import when, col, lower, trim, coalesce, to_date
+from pyspark.sql.functions import when, col, lower, trim, coalesce, to_date, current_timestamp
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DateType
 from utilities import team_names, competition_names
 
@@ -26,7 +26,7 @@ from utilities import team_names, competition_names
 @dlt.expect("valid_scores", "HomeScore >= 0 AND AwayScore >= 0")
 @dlt.expect_or_drop("different_teams", "HomeTeam != AwayTeam")
 
-@dlt.expect("valid_parsed_date", "ParsedDate IS NOT NULL")
+@dlt.expect("valid_date", "Date IS NOT NULL")
 
 def match_results():
     df = dlt.readStream("bronze_dev.default.bronze_match_results")
@@ -69,11 +69,11 @@ def match_results():
     ))
 
     #Home Advantage
-    df = df.withColumn("IsHome", when(col("HomeTeam").isNotNull() & (col("Round") != "F"), 1).otherwise(0))
+    df = df.withColumn("IsNeutral", when(col("Round") == "F", 1).otherwise(0))
     
     #meta data columns
     df = (
-        df.withColumn("bronze_file", df["_metadata"]["file_path"])
+        df.withColumn("bronze_file", col("source_file"))
         .withColumn("_silver_ingest_timestamp", current_timestamp())
     )
 
@@ -96,7 +96,7 @@ def match_results():
         col("HomeWinFlag").cast(IntegerType()),
         col("AwayWinFlag").cast(IntegerType()),
         col("DrawFlag").cast(IntegerType()),
-        col("IsHome").cast(IntegerType()),
+        col("IsNeutral").cast(IntegerType()),
         col("bronze_file"),
         col("_silver_ingest_timestamp")
     )

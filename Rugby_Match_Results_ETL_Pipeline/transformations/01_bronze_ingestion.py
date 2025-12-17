@@ -31,13 +31,13 @@ def match_results_raw():
         .option("cloudFiles.format", "csv")
         .option("cloudFiles.schemaEvolutionMode", "addNewColumns")
         .option("cloudFiles.inferColumnTypes", "true")
-        .load("s3://rugby-data-lake-portfolio/raw/matches/")
+        .load("s3://rugby-data-lake-portfolio/raw/matches/*")
         #.load("/Volumes/rugby_data_dev/rugby_landing/raw_data")
     )
 
     df = (
         df.withColumn("_ingest_date", current_date())
-        .withColumn("souce_file", df["_metadata"]["file_path"])
+        .withColumn("source_file", df["_metadata"]["file_path"])
     )
 
     return df
