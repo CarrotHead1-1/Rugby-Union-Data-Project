@@ -1,41 +1,66 @@
 import pandas as pd
 
-#base elo is 1500 
-# k factor is 35
+def calculate_elo(df: pd.DataFrame, K: int = 35) -> pd.DataFrame:
 
-eloRatings = {}
-history = {}
-
-def getElo(team):
-    return eloRatings.get(team, 1500)
-
-def updateElo(home, away, result):
-    homeElo = getElo(home)
-    awayElo = getElo(away)
+    #sort matches into sequence order
+    match_sequence_df = df.sort_values("MatchSequence")
     
-    # K factor
-    K = 35
+    elo_state = {}
+    match_results_arr = []
 
-    if result.lower() == "homewin":
-        matchResult = 1
-    elif result.lower() == "awaywin":
-        matchResult = 0
-    else:
-        matchResult = 0.5
 
-    #calculate expected result
-    expected = 1 / (1 + 10 ** ((awayElo - homeElo) / 400))
+    for _, rows in match_sequence_df.iterrows():
+        
+        homeTeam = rows.HomeTeamId
+        awayTeam = rows.AwayTeamId
 
-    newHomeElo = homeElo + K * (matchResult - expected)
-    newAwayElo = awayElo + K * ((1 - matchResult) - (1 - expected))
+        #check teams are in elo state, otherwise intailise
+        if homeTeam not in elo_state:
+            elo_state[homeTeam] = rows.HomeStartingElo
+        if awayTeam not in elo_state:
+            elo_state[awayTeam] = rows.AwayStartingElo
+        
+        #calculate expected scores and pre match elo 
+        homeBefore = elo_state[homeTeam]
+        awayBefore = elo_state[awayTeam]
+        
+        expected_result = 1 / (1 + 10 ** ((awayBefore - homeBefore) / 400))
 
-    eloRatings[home] = newHomeElo
-    eloRatings[away] = newAwayElo
+        #calculate new elo
+        if rows.Result.lower() == "homewin":
+            result = 1
+        elif rows.Result.lower() == "awaywin":
+            result = 0
+        else:
+            result = 0.5
 
-    for team, rating in [(home, newHomeElo), (away, newAwayElo)]:
-        history.setdefault(team, []).append(rating)
+        homeAfter = homeBefore + K * (result - expected_result)
+        awayAfter = awayBefore + K * ((1 - result) - (1 - expected_result))
     
-    return homeElo, awayElo, newHomeElo, newAwayElo
+        #add new elo to match results array
+        match_results_arr.append(
+            {
+            "MatchKey": rows.MatchKey,
+            "MatchSequence": rows.MatchSequence,
+            "TeamId": homeTeam,
+            "OpponentId": awayTeam,
+            "EloBefore": homeBefore,
+            "EloAfter": homeAfter,
+            "EloChange": homeAfter - homeBefore
+            }
+        )
 
-def getHistory():
-    return history
+        match_results_arr.append(
+            {
+            "MatchKey": rows.MatchKey,
+            "MatchSequence": rows.MatchSequence,
+            "TeamId": awayTeam,
+            "OpponentId": homeTeam,
+            "EloBefore": awayBefore,
+            "EloAfter": awayAfter,
+            "EloChange": awayAfter - awayBefore
+            }
+        )
+
+    return pd.DataFrame(match_results_arr)
+

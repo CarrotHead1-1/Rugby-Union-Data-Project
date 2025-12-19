@@ -1,7 +1,8 @@
 import dlt
 from pyspark.sql.functions import current_timestamp, lit, col, monotonically_increasing_id, row_number
 from pyspark.sql.window import Window
-from puyspark.sql import Row
+from pyspark.sql import Row
+import pandas as pd
 
 #create a table that gets the oldest season per competition 
 @dlt.table(
@@ -152,57 +153,11 @@ def team_base_elo():
 def fact_elo():
 
     #get the match sequence table
-    match_sequence = dlt.read("gold_dev.default.match_sequence").orderBy("MatchSequence")
+    match_sequence = dlt.read("gold_dev.default.match_sequence").orderBy("CompetitionId", "SeasonId", "MatchSequence")
 
     #get the starting elo 
-    starting_elo = dlt.read("gold_dev.default.team_base_elo")
+    starting_elo = dlt.read("gold_dev.default.team_base_elo").select("TeamId", "Elo")
 
-    #elo calculator
-    def elo_calculator(rows):
-
-        elo_state = {}
-
-        #set parameters
-        K = 35
-        #HOME_ADVANTAGE
-
-        for row in rows:
-            homeTeam = row["HomeTeamId"]
-            awayTeam = row["AwayTeamId"]
-            
-            #get the result
-            matchResult = row["Result"]
-
-            #check teams are in elo state
-            if homeTeam not in elo_state:
-                elo_state[homeTeam] = row["HomeStartingElo"]
-            if awayTeam not in elo_state:
-                elo_state[awayTeam] = row["AwayStartingElo"]
-            
-            #get elo ratings 
-            homeBefore = elo_state[homeTeam]
-            awayBefore = elo_state[awayTeam]
-
-            #calculate the expected result
-            expected = 1 / (1 + 10 ** ((awayBefore - homeBefore) / 400))
-
-            #get the actual result and calculate new elo values
-            if matchResult.lower() == "homewin":
-                result = 1
-            elif matchResult.lower() == "awaywin":
-                result = 0
-            else:
-                result = 0.5
-        
-            homeAfter = homeBefore + K * (result - expected)
-            awayAfter = awayBefore + K * ((1 - result) - (1 - expected))
-        
-            #update new elo ratings
-            elo_state[homeTeam] = homeAfter
-            elo_state[awayTeam] = awayAfter
-
-            #create spark rows for home and away team to add elo changes
-            
 
     #join the match sequence table to the starting elo table
     df = (
@@ -210,22 +165,90 @@ def fact_elo():
         .join(starting_elo.withColumnRenamed("TeamId", "AwayTeamId").withColumnRenamed("Elo", "AwayStartingElo"), "AwayTeamId", "left")
     )
 
-    #return the table with the calculated elo ratings
+    def calculate_elo(pdf: pd.DataFrame) -> pd.DataFrame:
+
+        pdf = pdf.sort_values("MatchSequence")
+        elo_state = {}
+        rows = []
+
+        K = 35
+        competition_id = pdf["CompetitionId"].iloc[0]
+
+        for _, r in pdf.iterrows():
+
+            home = r.HomeTeamId
+            away = r.AwayTeamId
+
+            if home not in elo_state:
+                elo_state[home] = r.HomeStartingElo
+            if away not in elo_state:
+                elo_state[away] = r.AwayStartingElo
+
+            home_before = elo_state[home]
+            away_before = elo_state[away]
+
+            expected = 1 / (1 + 10 ** ((away_before - home_before) / 400))
+
+            if r.Result.lower() == "homewin":
+                actual = 1
+            elif r.Result.lower() == "awaywin":
+                actual = 0
+            else:
+                actual = 0.5
+
+            home_after = home_before + K * (actual - expected)
+            away_after = away_before + K * ((1 - actual) - (1 - expected))
+
+            elo_state[home] = home_after
+            elo_state[away] = away_after
+
+            rows.append({
+                "MatchKey": r.MatchKey,
+                "MatchSequence": r.MatchSequence,
+                "CompetitionId": competition_id,
+                "SeasonId": r.SeasonId,
+                "Round": r.Round,
+                "Date": r.Date,
+                "TeamId": home,
+                "OpponentId": away,
+                "EloBefore": round(home_before, 2),
+                "EloAfter": round(home_after, 2),
+                "EloChange": round(home_after - home_before, 2)
+            })
+
+            rows.append({
+                "MatchKey": r.MatchKey,
+                "MatchSequence": r.MatchSequence,
+                "CompetitionId": competition_id,
+                "SeasonId": r.SeasonId,
+                "Round": r.Round,
+                "Date": r.Date,
+                "TeamId": away,
+                "OpponentId": home,
+                "EloBefore": round(away_before, 2),
+                "EloAfter": round(away_after, 2),
+                "EloChange": round(away_after - away_before, 2)
+            })
+
+        return pd.DataFrame(rows)
+
     return (
         df.groupBy("CompetitionId")
         .applyInPandas(
-            elo_calculator,
-            schema = """
+            calculate_elo,
+            schema="""
                 MatchKey INT,
                 MatchSequence INT,
                 CompetitionId INT,
                 SeasonId INT,
+                Round STRING,
+                Date DATE,
                 TeamId INT,
-                OppenentId INT,
+                OpponentId INT,
                 EloBefore INT,
                 EloAfter INT,
                 EloChange INT
-                """
+            """
         )
     )
 
