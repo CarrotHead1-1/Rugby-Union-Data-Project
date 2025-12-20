@@ -38,7 +38,7 @@ def match_results():
     df = competition_names.normalise_competition_names(df)
 
     #drop duplicate matches
-    df = df.drop_duplicates(["MatchId"])
+    #df = df.drop_duplicates(["MatchId"])
 
     #create results column and points difference 
     df = df.withColumn("Result", 
