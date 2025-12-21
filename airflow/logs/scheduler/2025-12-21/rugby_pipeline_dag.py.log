@@ -1,0 +1,221 @@
+[2025-12-21T16:18:41.613+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:18:41.615+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:18:41.616+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:18:41.616+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:18:41.656+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:18:41.651+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:18:41.659+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:18:41.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.083 seconds
+[2025-12-21T16:19:11.850+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:19:11.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:19:11.855+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:19:11.855+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:19:11.887+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:19:11.878+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:19:11.888+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:19:11.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.082 seconds
+[2025-12-21T16:19:42.366+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:19:42.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:19:42.369+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:19:42.369+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:19:42.402+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:19:42.396+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:19:42.404+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:19:42.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.122 seconds
+[2025-12-21T16:20:12.691+0000] {processor.py:161} INFO - Started process (PID=190) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:20:12.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:20:12.697+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:20:12.696+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:20:12.740+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:20:12.732+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:20:12.743+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:20:12.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.138 seconds
+[2025-12-21T16:20:43.015+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:20:43.017+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:20:43.018+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:20:43.018+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:20:43.087+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:20:43.044+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:20:43.089+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:20:43.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.105 seconds
+[2025-12-21T16:21:13.321+0000] {processor.py:161} INFO - Started process (PID=200) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:21:13.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:21:13.325+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:21:13.324+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:21:13.365+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:21:13.356+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:21:13.368+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:21:13.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.169 seconds
+[2025-12-21T16:21:43.689+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:21:43.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:21:43.692+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:21:43.692+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:21:43.731+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:21:43.723+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:21:43.735+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:21:43.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.125 seconds
+[2025-12-21T16:22:13.975+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:22:13.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:22:13.979+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:22:13.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:22:14.013+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:22:14.006+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:22:14.017+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:22:14.094+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.125 seconds
+[2025-12-21T16:22:44.408+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:22:44.410+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:22:44.412+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:22:44.411+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:22:44.447+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:22:44.440+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:22:44.450+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:22:44.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.114 seconds
+[2025-12-21T16:23:14.770+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:23:14.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:23:14.774+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:23:14.773+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:23:14.806+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:23:14.800+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:23:14.809+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:23:14.844+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.081 seconds
+[2025-12-21T16:23:45.142+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:23:45.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:23:45.146+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:23:45.146+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:23:45.186+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:23:45.178+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:23:45.189+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:23:45.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.127 seconds
+[2025-12-21T16:24:15.436+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:24:15.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:24:15.440+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:15.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:24:15.479+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:15.471+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/rugby_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rugby_pipeline_dag.py", line 2, in <module>
+    from airflow import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py)
+[2025-12-21T16:24:15.482+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:24:15.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.123 seconds
+[2025-12-21T16:24:53.460+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:24:53.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:24:53.462+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:24:53.537+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:24:53.910+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.909+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:rugby_pipeline
+[2025-12-21T16:24:53.920+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.920+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:rugby_pipeline
+[2025-12-21T16:24:53.927+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.927+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:rugby_pipeline
+[2025-12-21T16:24:53.928+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.928+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:24:53.941+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.941+0000] {dag.py:3058} INFO - Creating ORM DAG for rugby_pipeline
+[2025-12-21T16:24:53.955+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:24:53.955+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:24:53.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.533 seconds
+[2025-12-21T16:25:24.377+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:25:24.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:25:24.381+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:25:24.381+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:25:24.423+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:25:24.474+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:25:24.474+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:25:24.515+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:25:24.515+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:25:24.587+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.215 seconds
+[2025-12-21T16:25:54.967+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:25:54.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:25:54.971+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:25:54.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:25:55.024+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:25:55.081+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:25:55.081+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:25:55.120+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:25:55.119+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:25:55.189+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.229 seconds
+[2025-12-21T16:26:25.522+0000] {processor.py:161} INFO - Started process (PID=190) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:26:25.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:26:25.526+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:26:25.525+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:26:25.569+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:26:25.626+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:26:25.626+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:26:25.667+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:26:25.667+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:26:25.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.221 seconds
+[2025-12-21T16:27:01.719+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:27:01.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:27:01.722+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:27:01.722+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:27:01.769+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:27:01.831+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:27:01.831+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:27:01.856+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:27:01.856+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:27:01.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.161 seconds
+[2025-12-21T16:27:32.046+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:27:32.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:27:32.050+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:27:32.049+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:27:32.092+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:27:32.144+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:27:32.144+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:27:32.187+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:27:32.187+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:27:32.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.199 seconds
+[2025-12-21T16:28:02.426+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:28:02.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline_dag.py for tasks to queue
+[2025-12-21T16:28:02.430+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:28:02.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:28:02.481+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline_dag.py
+[2025-12-21T16:28:02.538+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:28:02.538+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-21T16:28:02.583+0000] {logging_mixin.py:188} INFO - [2025-12-21T16:28:02.583+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-20 00:00:00+00:00, run_after=2025-12-21 00:00:00+00:00
+[2025-12-21T16:28:02.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline_dag.py took 0.199 seconds

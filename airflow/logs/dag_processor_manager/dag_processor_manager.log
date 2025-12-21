@@ -1,0 +1,175 @@
+[2025-12-21T16:08:39.667+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-12-21T16:08:39.668+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-12-21T16:08:39.668+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-21T16:08:39.669+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-12-21T16:08:39.674+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2025-12-21T16:13:40.575+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-12-21T16:13:40.594+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2025-12-21T16:18:41.538+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-12-21T16:18:41.552+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-12-21T16:18:43.613+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.13s           2025-12-21T16:18:41
+================================================================================
+[2025-12-21T16:19:13.925+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.15s           2025-12-21T16:19:11
+================================================================================
+[2025-12-21T16:19:44.368+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.18s           2025-12-21T16:19:42
+================================================================================
+[2025-12-21T16:20:14.764+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.20s           2025-12-21T16:20:12
+================================================================================
+[2025-12-21T16:20:45.066+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.14s           2025-12-21T16:20:43
+================================================================================
+[2025-12-21T16:21:15.327+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.23s           2025-12-21T16:21:13
+================================================================================
+[2025-12-21T16:21:45.671+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.19s           2025-12-21T16:21:43
+================================================================================
+[2025-12-21T16:22:16.101+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.19s           2025-12-21T16:22:14
+================================================================================
+[2025-12-21T16:22:46.406+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.18s           2025-12-21T16:22:44
+================================================================================
+[2025-12-21T16:23:16.793+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.14s           2025-12-21T16:23:14
+================================================================================
+[2025-12-21T16:23:41.999+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-12-21T16:23:42.035+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-12-21T16:23:47.137+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.19s           2025-12-21T16:23:45
+================================================================================
+[2025-12-21T16:24:17.540+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           0           1  0.18s           2025-12-21T16:24:15
+================================================================================
+[2025-12-21T16:24:21.245+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-12-21T16:24:53.330+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-12-21T16:24:53.331+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-12-21T16:24:53.332+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-21T16:24:53.332+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-12-21T16:24:53.362+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-12-21T16:24:53.479+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/rugby_pipeline_dag.py    174  0.05s             0           0
+================================================================================
+[2025-12-21T16:25:23.709+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           1           0  0.58s           2025-12-21T16:24:54
+================================================================================
+[2025-12-21T16:25:53.853+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           1           0  0.28s           2025-12-21T16:25:24
+================================================================================
+[2025-12-21T16:26:24.126+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py                           1           0  0.33s           2025-12-21T16:25:55
+================================================================================
+[2025-12-21T16:26:43.017+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-12-21T16:27:01.595+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-12-21T16:27:01.597+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-12-21T16:27:01.597+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-21T16:27:01.598+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-12-21T16:27:01.626+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-12-21T16:27:01.742+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/rugby_pipeline_dag.py    174  0.05s             0           0
+================================================================================
+[2025-12-21T16:27:32.005+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py    180  0.02s             1           0  0.20s           2025-12-21T16:27:01
+================================================================================
+[2025-12-21T16:28:02.388+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rugby_pipeline_dag.py    185  0.01s             1           0  0.27s           2025-12-21T16:27:32
+================================================================================
