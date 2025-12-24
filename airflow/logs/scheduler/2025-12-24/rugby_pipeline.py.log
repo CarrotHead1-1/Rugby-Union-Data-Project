@@ -1538,3 +1538,171 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to Databricks
 [2025-12-24T17:23:52.635+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:23:52.635+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-12-24T17:23:52.673+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:23:52.673+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
 [2025-12-24T17:23:52.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.404 seconds
+[2025-12-24T17:24:23.099+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:24:23.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:24:23.104+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:24:23.103+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:24:23.141+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:24:23.200+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:24:23.200+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:24:23.241+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:24:23.241+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:24:23.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.187 seconds
+[2025-12-24T17:24:53.368+0000] {processor.py:161} INFO - Started process (PID=431) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:24:53.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:24:53.372+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:24:53.372+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:24:53.409+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:24:53.468+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:24:53.468+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:24:53.520+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:24:53.519+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:24:53.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.237 seconds
+[2025-12-24T17:25:23.920+0000] {processor.py:161} INFO - Started process (PID=436) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:25:23.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:25:23.925+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:25:23.924+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:25:23.965+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:25:24.022+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:25:24.022+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:25:24.063+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:25:24.063+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:25:24.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.183 seconds
+[2025-12-24T17:25:54.204+0000] {processor.py:161} INFO - Started process (PID=441) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:25:54.207+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:25:54.209+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:25:54.208+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:25:54.246+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:25:54.303+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:25:54.303+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:25:54.340+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:25:54.339+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:25:54.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.213 seconds
+[2025-12-24T17:26:24.822+0000] {processor.py:161} INFO - Started process (PID=446) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:26:24.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:26:24.826+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:26:24.825+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:26:24.903+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:26:24.971+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:26:24.970+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:26:25.014+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:26:25.014+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:26:25.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.235 seconds
+[2025-12-24T17:26:55.387+0000] {processor.py:161} INFO - Started process (PID=451) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:26:55.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:26:55.392+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:26:55.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:26:55.432+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:26:55.490+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:26:55.489+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:26:55.529+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:26:55.528+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:26:55.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.184 seconds
+[2025-12-24T17:27:25.659+0000] {processor.py:161} INFO - Started process (PID=456) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:27:25.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:27:25.662+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:27:25.662+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:27:25.697+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:27:25.750+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:27:25.750+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:27:25.789+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:27:25.789+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:27:25.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.206 seconds
+[2025-12-24T17:27:56.180+0000] {processor.py:161} INFO - Started process (PID=461) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:27:56.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:27:56.184+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:27:56.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:27:56.221+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:27:56.276+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:27:56.275+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:27:56.341+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:27:56.341+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T17:27:56.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.201 seconds
+[2025-12-24T17:28:26.494+0000] {processor.py:161} INFO - Started process (PID=468) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:28:26.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:28:26.499+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:28:26.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:28:26.544+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:28:26.611+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:28:26.610+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:28:26.662+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:28:26.662+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:28:26.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.254 seconds
+[2025-12-24T17:28:57.110+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:28:57.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:28:57.116+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:28:57.114+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:28:57.155+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:28:57.201+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:28:57.201+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:28:57.241+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:28:57.241+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:28:57.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.209 seconds
+[2025-12-24T17:29:27.410+0000] {processor.py:161} INFO - Started process (PID=480) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:29:27.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:29:27.416+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:29:27.415+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:29:27.457+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:29:27.522+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:29:27.521+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:29:27.567+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:29:27.567+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:29:27.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.245 seconds
+[2025-12-24T17:29:57.966+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:29:57.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:29:57.970+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:29:57.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:29:58.007+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:29:58.060+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:29:58.059+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:29:58.097+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:29:58.097+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:29:58.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.166 seconds
+[2025-12-24T17:30:28.251+0000] {processor.py:161} INFO - Started process (PID=490) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:30:28.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:30:28.255+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:30:28.255+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:30:28.289+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:30:28.353+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:30:28.352+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:30:28.395+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:30:28.394+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:30:28.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.184 seconds
+[2025-12-24T17:30:58.701+0000] {processor.py:161} INFO - Started process (PID=495) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:30:58.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:30:58.705+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:30:58.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:30:58.741+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:30:58.808+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:30:58.808+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:30:58.855+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:30:58.854+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:30:58.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.195 seconds
+[2025-12-24T17:31:29.037+0000] {processor.py:161} INFO - Started process (PID=500) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:31:29.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:31:29.042+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:31:29.041+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:31:29.078+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:31:29.142+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:31:29.141+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:31:29.186+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:31:29.185+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:31:29.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.230 seconds
+[2025-12-24T17:31:59.478+0000] {processor.py:161} INFO - Started process (PID=505) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:31:59.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:31:59.481+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:31:59.481+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:31:59.516+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:31:59.571+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:31:59.570+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:31:59.608+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:31:59.607+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:31:59.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.206 seconds
+[2025-12-24T17:32:29.832+0000] {processor.py:161} INFO - Started process (PID=510) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:32:29.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:32:29.836+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:32:29.835+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:32:29.871+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:32:29.927+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:32:29.927+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:32:29.969+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:32:29.968+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:32:30.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.213 seconds
+[2025-12-24T17:33:00.260+0000] {processor.py:161} INFO - Started process (PID=515) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:33:00.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:33:00.264+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:33:00.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:33:00.304+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:33:00.380+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:33:00.380+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:33:00.418+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:33:00.417+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:33:00.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.200 seconds
+[2025-12-24T17:33:30.630+0000] {processor.py:161} INFO - Started process (PID=520) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:33:30.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:33:30.634+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:33:30.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:33:30.676+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:33:30.741+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:33:30.740+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:33:30.785+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:33:30.785+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:33:30.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.234 seconds
+[2025-12-24T17:34:01.045+0000] {processor.py:161} INFO - Started process (PID=525) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:34:01.047+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:34:01.049+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:34:01.049+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:34:01.087+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:34:01.153+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:34:01.153+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:34:01.191+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:34:01.191+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:34:01.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.224 seconds
+[2025-12-24T17:34:31.459+0000] {processor.py:161} INFO - Started process (PID=530) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:34:31.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:34:31.462+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:34:31.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:34:31.504+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:34:31.562+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:34:31.561+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:34:31.599+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:34:31.599+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:34:31.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.214 seconds
+[2025-12-24T17:35:01.848+0000] {processor.py:161} INFO - Started process (PID=535) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:35:01.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:35:01.851+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:35:01.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:35:01.889+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:35:01.945+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:35:01.944+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:35:01.983+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:35:01.983+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:35:02.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.211 seconds
+[2025-12-24T17:35:32.308+0000] {processor.py:161} INFO - Started process (PID=540) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:35:32.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:35:32.312+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:35:32.311+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:35:32.350+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:35:32.407+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:35:32.407+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:35:32.445+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:35:32.445+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:35:32.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.216 seconds
+[2025-12-24T17:36:02.635+0000] {processor.py:161} INFO - Started process (PID=545) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:36:02.637+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T17:36:02.640+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:36:02.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:36:02.679+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T17:36:02.740+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:36:02.739+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T17:36:02.779+0000] {logging_mixin.py:188} INFO - [2025-12-24T17:36:02.778+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-24 00:00:00+00:00, run_after=2025-12-25 00:00:00+00:00
+[2025-12-24T17:36:02.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.222 seconds
