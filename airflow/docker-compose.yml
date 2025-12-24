@@ -1,19 +1,19 @@
-services: 
+services:
   postgres:
     image: postgres:13
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
-    volumes: 
+    volumes:
       - postgres-db-volume:/var/lib/postgresql/data
-  
+
   airflow-webserver:
-    image: apache/airflow:2.8.1
+    build: .
     depends_on:
       - postgres
     environment:
-      AIRFLOW_CORE_EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     volumes:
@@ -24,12 +24,12 @@ services:
       - "8080:8080"
     command: webserver
 
-  airflow-schedular:
-    image: apache/airflow:2.8.1
+  airflow-scheduler:
+    build: .
     depends_on:
       - postgres
     environment:
-      AIRFLOW_CORE_EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     volumes:
@@ -38,5 +38,5 @@ services:
       - ./plugins:/opt/airflow/plugins
     command: scheduler
 
-  volumes:
-    postgres-db-volume:
+volumes:
+  postgres-db-volume:
