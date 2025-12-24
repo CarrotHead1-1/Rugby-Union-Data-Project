@@ -541,3 +541,10 @@ ImportError: cannot import name 'BashOperator' from 'airflow' (/home/airflow/.lo
 [2025-12-24T16:56:12.818+0000] {logging_mixin.py:188} INFO - [2025-12-24T16:56:12.818+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-12-24T16:56:12.858+0000] {logging_mixin.py:188} INFO - [2025-12-24T16:56:12.857+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
 [2025-12-24T16:56:12.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.218 seconds
+[2025-12-24T16:56:43.187+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T16:56:43.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rugby_pipeline.py for tasks to queue
+[2025-12-24T16:56:43.191+0000] {logging_mixin.py:188} INFO - [2025-12-24T16:56:43.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T16:56:43.234+0000] {processor.py:840} INFO - DAG(s) 'rugby_pipeline' retrieved from /opt/airflow/dags/rugby_pipeline.py
+[2025-12-24T16:56:43.285+0000] {logging_mixin.py:188} INFO - [2025-12-24T16:56:43.285+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-24T16:56:43.323+0000] {logging_mixin.py:188} INFO - [2025-12-24T16:56:43.322+0000] {dag.py:3823} INFO - Setting next_dagrun for rugby_pipeline to 2025-12-23 00:00:00+00:00, run_after=2025-12-24 00:00:00+00:00
+[2025-12-24T16:56:43.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rugby_pipeline.py took 0.212 seconds
