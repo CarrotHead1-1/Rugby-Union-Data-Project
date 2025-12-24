@@ -1,5 +1,6 @@
 from airflow import DAG
-from airflow.operators.bash import BashOperator
+#from airflow.operators.bash import BashOperator
+from airflow.providers.databricks.operators.databricks import DatabricksRunNowOperator
 from datetime import datetime
 
 with DAG (
@@ -11,12 +12,12 @@ with DAG (
 
 ) as dag:
     
-    start = BashOperator(
+    start = DatabricksRunNowOperator(
         task_id = "start_pipeline",
         bash_command = "echo 'Starting Rugby Data Pipeline'",
     )
 
-    end = BashOperator(
+    end = DatabricksRunNowOperator(
         task_id = "end_pipeline",
         bash_command = "echo 'Pipeline Completed Successfully'",
     )
