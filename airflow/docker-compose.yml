@@ -9,7 +9,7 @@ services:
       - postgres-db-volume:/var/lib/postgresql/data
 
   airflow-webserver:
-    image: apache/airflow:2.8.1
+    build: .
     depends_on:
       - postgres
     environment:
@@ -25,7 +25,7 @@ services:
     command: webserver
 
   airflow-scheduler:
-    image: apache/airflow:2.8.1
+    build: .
     depends_on:
       - postgres
     environment:
