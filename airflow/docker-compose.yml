@@ -24,7 +24,7 @@ services:
       - "8080:8080"
     command: webserver
 
-    airflow-schedular:
+  airflow-schedular:
     image: apache/airflow:2.8.1
     depends_on:
       - postgres
