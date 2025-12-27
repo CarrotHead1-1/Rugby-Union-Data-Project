@@ -1,6 +1,7 @@
 from airflow import DAG
 #from airflow.operators.bash import BashOperator
 from airflow.providers.databricks.operators.databricks import DatabricksRunNowOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from datetime import datetime
 
 with DAG (
@@ -17,6 +18,14 @@ with DAG (
         databricks_conn_id = "databricks_default",
         job_id = 640017615260074 #databricks job id
     )
+
+    trigger_features = TriggerDagRunOperator(
+        task_id = "trigger_build_prediction_features",
+        trigger_dag_id = "build_prediction_features",
+        wait_for_completion = True
+    )
+
+    trigger_dlt >> trigger_features
     
     #local setup 
     # start = BashOperator(

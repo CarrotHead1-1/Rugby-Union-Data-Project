@@ -37,3 +37,393 @@
 [2025-12-27T18:21:14.952+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
 [2025-12-27T18:21:15.007+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
 [2025-12-27T18:21:15.050+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:22:15.883+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:22:15.897+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:22:15.898+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:22:15.918+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:22:15.930+0000] {standard_task_runner.py:60} INFO - Started process 658 to run task
+[2025-12-27T18:22:15.941+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmptvu_s7o0']
+[2025-12-27T18:22:15.947+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:22:16.061+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:22:16.239+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:22:16.256+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:22:16.341+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:22:16.395+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:22:16.442+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:23:17.663+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:23:17.676+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:23:17.677+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:23:17.697+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:23:17.706+0000] {standard_task_runner.py:60} INFO - Started process 702 to run task
+[2025-12-27T18:23:17.715+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpj70pd767']
+[2025-12-27T18:23:17.721+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:23:17.837+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:23:18.007+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:23:18.027+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:23:18.082+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:23:18.128+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:23:18.174+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:24:19.516+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:24:19.536+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:24:19.537+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:24:19.568+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:24:19.582+0000] {standard_task_runner.py:60} INFO - Started process 746 to run task
+[2025-12-27T18:24:19.593+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmp2g4bl0sg']
+[2025-12-27T18:24:19.600+0000] {standard_task_runner.py:88} INFO - Job 17: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:24:19.734+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:24:19.890+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:24:19.910+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:24:20.004+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:24:20.047+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:24:20.094+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:25:20.627+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:25:20.643+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:25:20.644+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:25:20.703+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:25:20.716+0000] {standard_task_runner.py:60} INFO - Started process 789 to run task
+[2025-12-27T18:25:20.727+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpnofos38l']
+[2025-12-27T18:25:20.733+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:25:20.845+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:25:21.022+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:25:21.038+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:25:21.121+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:25:21.140+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:25:21.185+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:26:22.369+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:26:22.383+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:26:22.385+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:26:22.407+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:26:22.421+0000] {standard_task_runner.py:60} INFO - Started process 833 to run task
+[2025-12-27T18:26:22.428+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpkcm8lj2b']
+[2025-12-27T18:26:22.433+0000] {standard_task_runner.py:88} INFO - Job 20: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:26:22.552+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:26:22.696+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:26:22.715+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:26:22.766+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:26:22.802+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:26:22.850+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:27:24.127+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:27:24.141+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:27:24.143+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:27:24.170+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:27:24.181+0000] {standard_task_runner.py:60} INFO - Started process 878 to run task
+[2025-12-27T18:27:24.190+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpq91mdsis']
+[2025-12-27T18:27:24.197+0000] {standard_task_runner.py:88} INFO - Job 23: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:27:24.314+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:27:24.498+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:27:24.517+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:27:24.684+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:27:24.726+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:27:24.776+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:28:25.449+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:28:25.463+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:28:25.464+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:28:25.487+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:28:25.498+0000] {standard_task_runner.py:60} INFO - Started process 922 to run task
+[2025-12-27T18:28:25.506+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpxmasle43']
+[2025-12-27T18:28:25.512+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:28:25.609+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:28:25.743+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:28:25.759+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:28:25.803+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:28:25.840+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:28:25.882+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:29:26.757+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:29:26.771+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:29:26.772+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:29:26.793+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:29:26.803+0000] {standard_task_runner.py:60} INFO - Started process 965 to run task
+[2025-12-27T18:29:26.811+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpz99ekuov']
+[2025-12-27T18:29:26.817+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:29:26.923+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:29:27.062+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:29:27.077+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:29:27.155+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:29:27.184+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:29:27.224+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:30:27.589+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:30:27.602+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:30:27.602+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:30:27.621+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:30:27.636+0000] {standard_task_runner.py:60} INFO - Started process 1010 to run task
+[2025-12-27T18:30:27.643+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpipmtp6n0']
+[2025-12-27T18:30:27.648+0000] {standard_task_runner.py:88} INFO - Job 29: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:30:27.765+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:30:27.898+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:30:27.915+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:30:27.998+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:30:28.059+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:30:28.108+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:31:28.734+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:31:28.750+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:31:28.751+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:31:28.770+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:31:28.781+0000] {standard_task_runner.py:60} INFO - Started process 1053 to run task
+[2025-12-27T18:31:28.790+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmputj5a4uk']
+[2025-12-27T18:31:28.795+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:31:28.893+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:31:29.096+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:31:29.115+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:31:29.223+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:31:29.285+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:31:29.333+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:32:30.054+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:32:30.067+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:32:30.068+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:32:30.087+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:32:30.099+0000] {standard_task_runner.py:60} INFO - Started process 1097 to run task
+[2025-12-27T18:32:30.107+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpbaqqk3g1']
+[2025-12-27T18:32:30.111+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:32:30.215+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:32:30.365+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:32:30.383+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:32:30.428+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:32:30.446+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:32:30.488+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:33:30.953+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:33:30.968+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:33:30.969+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:33:30.987+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:33:30.997+0000] {standard_task_runner.py:60} INFO - Started process 1141 to run task
+[2025-12-27T18:33:31.005+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpp934bnk8']
+[2025-12-27T18:33:31.010+0000] {standard_task_runner.py:88} INFO - Job 34: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:33:31.108+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:33:31.281+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:33:31.301+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:33:31.379+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:33:31.420+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:33:31.475+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:34:32.009+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:34:32.021+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:34:32.022+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:34:32.049+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:34:32.063+0000] {standard_task_runner.py:60} INFO - Started process 1185 to run task
+[2025-12-27T18:34:32.071+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpai2sw1vl']
+[2025-12-27T18:34:32.078+0000] {standard_task_runner.py:88} INFO - Job 36: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:34:32.184+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:34:32.354+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:34:32.371+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:34:32.453+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:34:32.487+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:34:32.535+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:35:33.272+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:35:33.286+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:35:33.288+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:35:33.314+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:35:33.326+0000] {standard_task_runner.py:60} INFO - Started process 1230 to run task
+[2025-12-27T18:35:33.335+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpdgbsbau1']
+[2025-12-27T18:35:33.340+0000] {standard_task_runner.py:88} INFO - Job 39: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:35:33.448+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:35:33.598+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:35:33.615+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:35:33.699+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:35:33.750+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:35:33.795+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:36:34.538+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:36:34.556+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:36:34.557+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:36:34.579+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:36:34.589+0000] {standard_task_runner.py:60} INFO - Started process 1274 to run task
+[2025-12-27T18:36:34.597+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpkxbfahq1']
+[2025-12-27T18:36:34.603+0000] {standard_task_runner.py:88} INFO - Job 41: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:36:34.700+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:36:34.858+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:36:34.875+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:36:34.955+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:36:35.012+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:36:35.053+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:37:36.274+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:37:36.288+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:37:36.289+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:37:36.309+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:37:36.319+0000] {standard_task_runner.py:60} INFO - Started process 1319 to run task
+[2025-12-27T18:37:36.328+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpks6duw4t']
+[2025-12-27T18:37:36.333+0000] {standard_task_runner.py:88} INFO - Job 44: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:37:36.445+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:37:36.618+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:37:36.637+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:37:36.722+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:37:36.743+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:37:36.786+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:38:37.214+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:38:37.229+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:38:37.230+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:38:37.257+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:38:37.269+0000] {standard_task_runner.py:60} INFO - Started process 1364 to run task
+[2025-12-27T18:38:37.278+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpmsan7e3u']
+[2025-12-27T18:38:37.285+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:38:37.433+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:38:37.587+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:38:37.603+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:38:37.648+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:38:37.694+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:38:37.736+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:39:38.590+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:39:38.602+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:39:38.604+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:39:38.622+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:39:38.631+0000] {standard_task_runner.py:60} INFO - Started process 217 to run task
+[2025-12-27T18:39:38.638+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpv_5rzq1n']
+[2025-12-27T18:39:38.643+0000] {standard_task_runner.py:88} INFO - Job 49: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:39:38.756+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:39:38.900+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:39:38.917+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:39:38.972+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:39:39.012+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:39:39.059+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:40:39.988+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:40:40.003+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:40:40.004+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:40:40.026+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:40:40.037+0000] {standard_task_runner.py:60} INFO - Started process 261 to run task
+[2025-12-27T18:40:40.045+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmp3rqzv3nl']
+[2025-12-27T18:40:40.051+0000] {standard_task_runner.py:88} INFO - Job 51: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:40:40.146+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:40:40.270+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:40:40.285+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:40:40.370+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:40:40.419+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:40:40.458+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:41:41.065+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:41:41.081+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:41:41.082+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:41:41.142+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:41:41.154+0000] {standard_task_runner.py:60} INFO - Started process 306 to run task
+[2025-12-27T18:41:41.162+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmp5h2jzl6d']
+[2025-12-27T18:41:41.167+0000] {standard_task_runner.py:88} INFO - Job 53: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:41:41.279+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:41:41.466+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:41:41.483+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:41:41.536+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:41:41.576+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:41:41.634+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:42:42.414+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:42:42.430+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:42:42.431+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:42:42.491+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:42:42.504+0000] {standard_task_runner.py:60} INFO - Started process 352 to run task
+[2025-12-27T18:42:42.514+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpwfg00z52']
+[2025-12-27T18:42:42.519+0000] {standard_task_runner.py:88} INFO - Job 55: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:42:42.623+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:42:42.793+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:42:42.811+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:42:42.860+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:42:42.887+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:42:42.930+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:43:43.533+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:43:43.547+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:43:43.548+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:43:43.572+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:43:43.582+0000] {standard_task_runner.py:60} INFO - Started process 395 to run task
+[2025-12-27T18:43:43.590+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpdxzqis55']
+[2025-12-27T18:43:43.595+0000] {standard_task_runner.py:88} INFO - Job 58: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:43:43.700+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:43:43.832+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:43:43.848+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:43:43.930+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:43:43.965+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:43:44.006+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:44:45.143+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:44:45.156+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:44:45.157+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:44:45.182+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:44:45.200+0000] {standard_task_runner.py:60} INFO - Started process 440 to run task
+[2025-12-27T18:44:45.210+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpixtfdrew']
+[2025-12-27T18:44:45.216+0000] {standard_task_runner.py:88} INFO - Job 60: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:44:45.324+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:44:45.459+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:44:45.477+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:44:45.523+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:44:45.547+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:44:45.595+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:45:46.281+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:45:46.297+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:45:46.298+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:45:46.320+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:45:46.341+0000] {standard_task_runner.py:60} INFO - Started process 484 to run task
+[2025-12-27T18:45:46.350+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpk_dsqktf']
+[2025-12-27T18:45:46.355+0000] {standard_task_runner.py:88} INFO - Job 61: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:45:46.468+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:45:46.645+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:45:46.663+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:45:46.746+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:45:46.765+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:45:46.814+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:46:48.120+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:46:48.134+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:46:48.135+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:46:48.153+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:46:48.164+0000] {standard_task_runner.py:60} INFO - Started process 527 to run task
+[2025-12-27T18:46:48.171+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpz_2wvjya']
+[2025-12-27T18:46:48.176+0000] {standard_task_runner.py:88} INFO - Job 63: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:46:48.271+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:46:48.431+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:46:48.448+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:46:48.530+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:46:48.586+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:46:48.630+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:47:49.923+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:47:49.937+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:47:49.938+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:47:49.983+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:47:49.992+0000] {standard_task_runner.py:60} INFO - Started process 572 to run task
+[2025-12-27T18:47:49.999+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpnbrropwk']
+[2025-12-27T18:47:50.004+0000] {standard_task_runner.py:88} INFO - Job 66: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:47:50.104+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:47:50.271+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:47:50.288+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:47:50.376+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:47:50.414+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:47:50.461+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:48:51.332+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:48:51.346+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:48:51.347+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:48:51.366+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:48:51.379+0000] {standard_task_runner.py:60} INFO - Started process 616 to run task
+[2025-12-27T18:48:51.387+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpt6g9n7de']
+[2025-12-27T18:48:51.393+0000] {standard_task_runner.py:88} INFO - Job 67: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:48:51.488+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:48:51.651+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:48:51.668+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:48:51.769+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:48:51.805+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:48:51.847+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:49:52.720+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:49:52.736+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:49:52.737+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:49:52.763+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:49:52.775+0000] {standard_task_runner.py:60} INFO - Started process 659 to run task
+[2025-12-27T18:49:52.783+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpvh9ed39s']
+[2025-12-27T18:49:52.789+0000] {standard_task_runner.py:88} INFO - Job 69: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:49:52.891+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:49:53.053+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:49:53.067+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:49:53.147+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:49:53.199+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:49:53.242+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:50:54.079+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:50:54.095+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:50:54.096+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:50:54.121+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:50:54.133+0000] {standard_task_runner.py:60} INFO - Started process 703 to run task
+[2025-12-27T18:50:54.141+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmp5cd1a6aw']
+[2025-12-27T18:50:54.146+0000] {standard_task_runner.py:88} INFO - Job 72: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:50:54.248+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:50:54.422+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:50:54.439+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:50:54.526+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:50:54.556+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:50:54.610+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:51:55.324+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:51:55.337+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:51:55.338+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:51:55.362+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_rugby_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:51:55.373+0000] {standard_task_runner.py:60} INFO - Started process 748 to run task
+[2025-12-27T18:51:55.380+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'wait_for_rugby_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmplp2y5_m0']
+[2025-12-27T18:51:55.386+0000] {standard_task_runner.py:88} INFO - Job 73: Subtask wait_for_rugby_pipeline
+[2025-12-27T18:51:55.479+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.wait_for_rugby_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:51:55.623+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_rugby_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:51:55.640+0000] {external_task.py:260} INFO - Poking for DAG 'rugby_pipeline' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:51:55.722+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:51:55.756+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:51:55.796+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
