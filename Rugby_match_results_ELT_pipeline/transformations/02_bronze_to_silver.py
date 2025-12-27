@@ -1,10 +1,10 @@
 import dlt 
-from pyspark.sql.functions import when, col, lower, trim, coalesce, to_date, current_timestamp
+from pyspark.sql.functions import when, col, lower, trim, coalesce, to_date, current_timestamp, current_date
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DateType
 from utilities import team_names, competition_names
 
 
-#create silver table
+#create silver table for match results only 
 @dlt.table(
     name = "silver_dev.default.match_results_silver",
     comment = "Cleaned, Validated and Enriched match results",
@@ -102,3 +102,56 @@ def match_results():
     )
     
     return df
+
+#create a silver table to store upcoming matches
+@dlt.table(
+    name = "silver_dev.default.upcoming_matches_silver",
+    comment = "Cleaned, Validated upcoming matches",
+    table_properties = {"quality": "silver"}
+)
+
+@dlt.expect("valid_match_id", "MatchID IS NOT NULL")
+@dlt.expect("valid_home_team", "HomeTeam IS NOT NULL")
+@dlt.expect("valid_away_team", "AwayTeam IS NOT NULL")
+@dlt.expect("different_teams", "HomeTeam != AwayTeam")
+@dlt.expect("valid_date", "Date IS NOT NULL")
+
+@dlt.expect("upcoming_match", "Date >= current_date()")
+
+
+def upcoming_matches():
+    df = dlt.readStream("bronze_dev.default.bronze_match_results")
+
+    #normalise teams and comps
+    df = team_names.normalise_team_names(df)
+    df = competition_names.normalise_competition_names(df)
+
+    #coalse dates into the correct format for DateType
+    df = df.withColumn("ParsedDate", coalesce(
+        to_date(col("Date"), "dd-MM-yyyy"),
+        to_date(col("Date"), "MM-dd-yyyy"),
+        to_date(col("Date"), "dd/MM/yyyy"),
+        to_date(col("Date"), "MM/dd/yyyy"),
+    ))
+
+    #filter for upcoming matches
+    df = df.filter(col("ParsedDate") >= current_date())
+
+    #meta data
+    df = (
+        df.withColumn("bronze_file", col("source_file"))
+        .withColumn("_silver_ingest_timestamp", current_timestamp())
+    )
+
+    return df.select(
+        col("MatchId").cast(IntegerType()),
+        col("HomeTeam").cast(StringType()),
+        col("AwayTeam").cast(StringType()),
+        col("Season").cast(StringType()),
+        col("Round").cast(StringType()),
+        col("ParsedDate").alias("Date"),
+        col("Competition").cast(StringType()),
+        col("source_file"),
+        col("_silver_ingest_timestamp")
+    )
+

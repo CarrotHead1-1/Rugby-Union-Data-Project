@@ -153,3 +153,52 @@ def fact_match_results():
     )
 
     return df
+
+@dlt.table(
+    name = "gold_dev.default.upcoming_matches_fact",
+    comment = "Dimension table that stores all the upcoming matches",
+    table_properties = {"quality": "gold"}
+)
+
+def upcoming_matches_fact():
+
+    #read from upcoming matches in silver layer
+    silver = dlt.read("silver_dev.default.upcoming_matches_silver")
+
+    #join other dimsension tables
+    teams = dlt.read("gold_dev.default.dim_teams")
+    seasons = dlt.read("gold_dev.default.dim_seasons")
+    comps = dlt.read("gold_dev.default.dim_competitions")
+    rounds = dlt.read("gold_dev.default.dim_rounds")
+
+    #join tables to silver to create fact table
+    df = (
+        silver.join(teams.withColumnRenamed("TeamId", "HomeTeamId"), silver.HomeTeam == teams.TeamName, "inner").drop("TeamName")
+        .join(teams.withColumnRenamed("TeamId", "AwayTeamId"), silver.AwayTeam == teams.TeamName, "inner").drop("TeamName")
+        .join(comps, "Competition", "inner")
+        .join(seasons, "Season", "inner")
+        .join(rounds, silver.Round == rounds.RoundCode, "left")
+    )
+
+    match_window = Window.orderBy(
+        col("Date"), col("CompetitionId"), col("HomeTeamId"), col("AwayTeamId")
+    )
+    #make a unique match key to use as the fact tables primary key
+    df = df.withColumn("MatchKey", row_number().over(match_window))
+
+    df = df.select(
+        col("MatchKey"),
+        col("HomeTeamId"),
+        col("AwayTeamId"),
+        col("SeasonId"),
+        col("RoundId"),
+        col("RoundCode"),
+        col("RoundOrder"),
+        col("RoundName"),
+        col("RoundType"),
+        col("Date"),
+        col("CompetitionId"),
+        col("_silver_ingest_timestamp")
+    )
+
+    return df
