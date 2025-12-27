@@ -453,3 +453,289 @@
 [2025-12-27T18:53:58.946+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
 [2025-12-27T18:53:58.993+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
 [2025-12-27T18:53:59.036+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:54:59.676+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:54:59.688+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:54:59.689+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:54:59.746+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:54:59.764+0000] {standard_task_runner.py:60} INFO - Started process 882 to run task
+[2025-12-27T18:54:59.772+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp3v74wjxf']
+[2025-12-27T18:54:59.779+0000] {standard_task_runner.py:88} INFO - Job 78: Subtask wait_for_prediction_features
+[2025-12-27T18:54:59.886+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:55:00.063+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:55:00.080+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:55:00.163+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:55:00.189+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:55:00.231+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:56:01.242+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:56:01.257+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:56:01.258+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:56:01.278+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:56:01.290+0000] {standard_task_runner.py:60} INFO - Started process 924 to run task
+[2025-12-27T18:56:01.297+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp9wtlxz_6']
+[2025-12-27T18:56:01.302+0000] {standard_task_runner.py:88} INFO - Job 79: Subtask wait_for_prediction_features
+[2025-12-27T18:56:01.403+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:56:01.569+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:56:01.585+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:56:01.668+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:56:01.712+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:56:01.756+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:57:02.805+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:57:02.818+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:57:02.819+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:57:02.842+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:57:02.855+0000] {standard_task_runner.py:60} INFO - Started process 966 to run task
+[2025-12-27T18:57:02.863+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpw6k08ut8']
+[2025-12-27T18:57:02.868+0000] {standard_task_runner.py:88} INFO - Job 80: Subtask wait_for_prediction_features
+[2025-12-27T18:57:02.975+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:57:03.142+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:57:03.161+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:57:03.212+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:57:03.239+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:57:03.285+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:58:03.878+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:58:03.895+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:58:03.897+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:58:03.957+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:58:03.966+0000] {standard_task_runner.py:60} INFO - Started process 1010 to run task
+[2025-12-27T18:58:03.972+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp97l16b4c']
+[2025-12-27T18:58:03.978+0000] {standard_task_runner.py:88} INFO - Job 82: Subtask wait_for_prediction_features
+[2025-12-27T18:58:04.076+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:58:04.255+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:58:04.272+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:58:04.317+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:58:04.347+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:58:04.389+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T18:59:04.712+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:59:04.725+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:59:04.726+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:59:04.744+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:59:04.756+0000] {standard_task_runner.py:60} INFO - Started process 1052 to run task
+[2025-12-27T18:59:04.764+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '83', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmprp0hmps2']
+[2025-12-27T18:59:04.769+0000] {standard_task_runner.py:88} INFO - Job 83: Subtask wait_for_prediction_features
+[2025-12-27T18:59:04.868+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:59:05.035+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:59:05.051+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T18:59:05.131+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T18:59:05.179+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T18:59:05.221+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:00:06.494+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:00:06.508+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:00:06.509+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:00:06.531+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:00:06.543+0000] {standard_task_runner.py:60} INFO - Started process 1094 to run task
+[2025-12-27T19:00:06.552+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp2ujxpizw']
+[2025-12-27T19:00:06.557+0000] {standard_task_runner.py:88} INFO - Job 84: Subtask wait_for_prediction_features
+[2025-12-27T19:00:06.661+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:00:06.844+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:00:06.862+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:00:06.947+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:00:06.967+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:00:07.013+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:01:08.043+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:01:08.063+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:01:08.064+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:01:08.124+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:01:08.137+0000] {standard_task_runner.py:60} INFO - Started process 1136 to run task
+[2025-12-27T19:01:08.145+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpd4pcwzy3']
+[2025-12-27T19:01:08.151+0000] {standard_task_runner.py:88} INFO - Job 85: Subtask wait_for_prediction_features
+[2025-12-27T19:01:08.273+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:01:08.489+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:01:08.507+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:01:08.552+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:01:08.600+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:01:08.641+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:02:09.669+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:02:09.682+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:02:09.683+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:02:09.702+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:02:09.712+0000] {standard_task_runner.py:60} INFO - Started process 1178 to run task
+[2025-12-27T19:02:09.719+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp216dtr5c']
+[2025-12-27T19:02:09.724+0000] {standard_task_runner.py:88} INFO - Job 86: Subtask wait_for_prediction_features
+[2025-12-27T19:02:09.823+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:02:09.947+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:02:09.964+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:02:10.043+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:02:10.094+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:02:10.151+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:03:15.104+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:03:15.114+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:03:15.115+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:03:15.128+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:03:15.136+0000] {standard_task_runner.py:60} INFO - Started process 189 to run task
+[2025-12-27T19:03:15.139+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpow89ccxp']
+[2025-12-27T19:03:15.142+0000] {standard_task_runner.py:88} INFO - Job 88: Subtask wait_for_prediction_features
+[2025-12-27T19:03:15.209+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:03:15.304+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:03:15.316+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:03:15.386+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:03:15.433+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:03:15.463+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:04:16.215+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:04:16.228+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:04:16.229+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:04:16.248+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:04:16.261+0000] {standard_task_runner.py:60} INFO - Started process 220 to run task
+[2025-12-27T19:04:16.269+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpeibod_z8']
+[2025-12-27T19:04:16.274+0000] {standard_task_runner.py:88} INFO - Job 90: Subtask wait_for_prediction_features
+[2025-12-27T19:04:16.370+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:04:16.499+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:04:16.515+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:04:16.558+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:04:16.603+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:04:16.650+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:05:17.399+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:05:17.413+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:05:17.414+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:05:17.435+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:05:17.447+0000] {standard_task_runner.py:60} INFO - Started process 262 to run task
+[2025-12-27T19:05:17.454+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpfd2rmakz']
+[2025-12-27T19:05:17.459+0000] {standard_task_runner.py:88} INFO - Job 91: Subtask wait_for_prediction_features
+[2025-12-27T19:05:17.626+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:05:17.766+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:05:17.783+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:05:17.866+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:05:17.909+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:05:17.955+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:06:18.737+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:06:18.752+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:06:18.753+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:06:18.775+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:06:18.787+0000] {standard_task_runner.py:60} INFO - Started process 304 to run task
+[2025-12-27T19:06:18.795+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpkx4pvb7m']
+[2025-12-27T19:06:18.801+0000] {standard_task_runner.py:88} INFO - Job 92: Subtask wait_for_prediction_features
+[2025-12-27T19:06:18.903+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:06:19.075+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:06:19.092+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:06:19.175+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:06:19.210+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:06:19.259+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:07:19.841+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:07:19.859+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:07:19.861+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:07:19.923+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:07:19.938+0000] {standard_task_runner.py:60} INFO - Started process 348 to run task
+[2025-12-27T19:07:19.945+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '94', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpax54ky_f']
+[2025-12-27T19:07:19.951+0000] {standard_task_runner.py:88} INFO - Job 94: Subtask wait_for_prediction_features
+[2025-12-27T19:07:20.065+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:07:20.245+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:07:20.268+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:07:20.350+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:07:20.402+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:07:20.447+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:08:21.079+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:08:21.094+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:08:21.095+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:08:21.119+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:08:21.131+0000] {standard_task_runner.py:60} INFO - Started process 390 to run task
+[2025-12-27T19:08:21.138+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp_oi6no0t']
+[2025-12-27T19:08:21.142+0000] {standard_task_runner.py:88} INFO - Job 95: Subtask wait_for_prediction_features
+[2025-12-27T19:08:21.238+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:08:21.372+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:08:21.389+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:08:21.470+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:08:21.513+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:08:21.554+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:09:21.840+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:09:21.852+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:09:21.853+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:09:21.874+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:09:21.885+0000] {standard_task_runner.py:60} INFO - Started process 432 to run task
+[2025-12-27T19:09:21.893+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpinskawqm']
+[2025-12-27T19:09:21.899+0000] {standard_task_runner.py:88} INFO - Job 96: Subtask wait_for_prediction_features
+[2025-12-27T19:09:21.990+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:09:22.105+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:09:22.118+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:09:22.161+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:09:22.186+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:09:22.223+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:10:23.358+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:10:23.372+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:10:23.373+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:10:23.389+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:10:23.399+0000] {standard_task_runner.py:60} INFO - Started process 474 to run task
+[2025-12-27T19:10:23.407+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '97', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpyu3bnm2z']
+[2025-12-27T19:10:23.412+0000] {standard_task_runner.py:88} INFO - Job 97: Subtask wait_for_prediction_features
+[2025-12-27T19:10:23.501+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:10:23.651+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:10:23.665+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:10:23.738+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:10:23.780+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:10:23.816+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:11:24.276+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:11:24.285+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:11:24.286+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:11:24.300+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:11:24.308+0000] {standard_task_runner.py:60} INFO - Started process 516 to run task
+[2025-12-27T19:11:24.313+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp_55xnkyq']
+[2025-12-27T19:11:24.317+0000] {standard_task_runner.py:88} INFO - Job 98: Subtask wait_for_prediction_features
+[2025-12-27T19:11:24.389+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:11:24.483+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:11:24.495+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:11:24.529+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:11:24.567+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:11:24.598+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:12:25.425+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:12:25.438+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:12:25.440+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:12:25.458+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:12:25.469+0000] {standard_task_runner.py:60} INFO - Started process 558 to run task
+[2025-12-27T19:12:25.477+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmppvvith7l']
+[2025-12-27T19:12:25.482+0000] {standard_task_runner.py:88} INFO - Job 99: Subtask wait_for_prediction_features
+[2025-12-27T19:12:25.582+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:12:25.715+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:12:25.734+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:12:25.820+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:12:25.851+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:12:25.895+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:13:26.525+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:13:26.538+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:13:26.539+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:13:26.557+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:13:26.573+0000] {standard_task_runner.py:60} INFO - Started process 600 to run task
+[2025-12-27T19:13:26.580+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp9b4rfxgz']
+[2025-12-27T19:13:26.585+0000] {standard_task_runner.py:88} INFO - Job 100: Subtask wait_for_prediction_features
+[2025-12-27T19:13:26.689+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:13:26.854+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:13:26.871+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:13:26.917+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:13:26.955+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:13:26.995+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:14:27.662+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:14:27.677+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:14:27.678+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:14:27.697+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:14:27.709+0000] {standard_task_runner.py:60} INFO - Started process 642 to run task
+[2025-12-27T19:14:27.717+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmpoms7vfd0']
+[2025-12-27T19:14:27.722+0000] {standard_task_runner.py:88} INFO - Job 101: Subtask wait_for_prediction_features
+[2025-12-27T19:14:27.820+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:14:27.982+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:14:28.001+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:14:28.085+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:14:28.133+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:14:28.177+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:15:28.975+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:15:28.993+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:15:28.994+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:15:29.060+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:15:29.073+0000] {standard_task_runner.py:60} INFO - Started process 689 to run task
+[2025-12-27T19:15:29.080+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmputak3ui9']
+[2025-12-27T19:15:29.085+0000] {standard_task_runner.py:88} INFO - Job 102: Subtask wait_for_prediction_features
+[2025-12-27T19:15:29.183+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:15:29.350+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:15:29.366+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:15:29.443+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:15:29.496+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:15:29.542+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:16:30.125+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:16:30.140+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:16:30.141+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T19:16:30.161+0000] {taskinstance.py:2191} INFO - Executing <Task(ExternalTaskSensor): wait_for_prediction_features> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:16:30.174+0000] {standard_task_runner.py:60} INFO - Started process 736 to run task
+[2025-12-27T19:16:30.181+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_models', 'wait_for_prediction_features', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '103', '--raw', '--subdir', 'DAGS_FOLDER/ml_models.py', '--cfg-path', '/tmp/tmp2m2pnsa0']
+[2025-12-27T19:16:30.186+0000] {standard_task_runner.py:88} INFO - Job 103: Subtask wait_for_prediction_features
+[2025-12-27T19:16:30.284+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_models.wait_for_prediction_features scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T19:16:30.449+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_models' AIRFLOW_CTX_TASK_ID='wait_for_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:16:30.466+0000] {external_task.py:260} INFO - Poking for DAG 'build_prediction_features' on 2025-12-26T00:00:00+00:00 ... 
+[2025-12-27T19:16:30.546+0000] {taskinstance.py:2658} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-12-27T19:16:30.596+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-27T19:16:30.643+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

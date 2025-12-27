@@ -13,14 +13,14 @@ with DAG (
 
 ) as dag:
     
-    wait_for_etl = ExternalTaskSensor(
-        task_id = "wait_for_rugby_pipeline",
-        external_dag_id = "rugby_pipeline",
-        external_task_id = None,
-        mode = "reschedule",
-        poke_interval = 60,
-        timeout = 60 * 60
-    )
+    # wait_for_etl = ExternalTaskSensor(
+    #     task_id = "wait_for_rugby_pipeline",
+    #     external_dag_id = "rugby_pipeline",
+    #     external_task_id = None,
+    #     mode = "reschedule",
+    #     poke_interval = 60,
+    #     timeout = 60 * 60
+    # )
 
     build_features = DatabricksRunNowOperator(
         task_id = "build_prediction_features",
@@ -30,8 +30,8 @@ with DAG (
 
     trigger_ml_models = TriggerDagRunOperator(
         task_id = "trigger_ml_models",
-        trigger_dag_id = "run_ml_models",
+        trigger_dag_id = "ml_models",
         wait_for_completion = True
     )
 
-    wait_for_etl >> build_features >> trigger_ml_models
+    build_features >> trigger_ml_models

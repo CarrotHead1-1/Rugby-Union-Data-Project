@@ -21,7 +21,7 @@ with DAG (
 
     trigger_features = TriggerDagRunOperator(
         task_id = "trigger_build_prediction_features",
-        trigger_dag_id = "build_prediction_features",
+        trigger_dag_id = "match_features_pipeline",
         wait_for_completion = True
     )
 
