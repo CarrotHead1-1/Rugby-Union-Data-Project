@@ -137,6 +137,9 @@ def upcoming_matches():
     #filter for upcoming matches
     df = df.filter(col("ParsedDate") >= current_date())
 
+    #Home Advantage
+    df = df.withColumn("IsNeutral", when(col("Round") == "F", 1).otherwise(0))
+
     #meta data
     df = (
         df.withColumn("bronze_file", col("source_file"))
@@ -151,6 +154,7 @@ def upcoming_matches():
         col("Round").cast(StringType()),
         col("ParsedDate").alias("Date"),
         col("Competition").cast(StringType()),
+        col("IsNeutral"),
         col("source_file"),
         col("_silver_ingest_timestamp")
     )

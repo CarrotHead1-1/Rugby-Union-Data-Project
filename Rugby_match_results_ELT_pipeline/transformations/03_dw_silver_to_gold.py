@@ -197,6 +197,7 @@ def upcoming_matches_fact():
         col("RoundName"),
         col("RoundType"),
         col("Date"),
+        col("IsNeutral"),
         col("CompetitionId"),
         col("_silver_ingest_timestamp")
     )

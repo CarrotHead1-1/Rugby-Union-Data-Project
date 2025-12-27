@@ -91,7 +91,8 @@ def match_features():
     "RoundName",
     "RoundOrder",
     "Date",
-    "CompetitionId"
+    "CompetitionId",
+    "IsNeutral"
   )
 
   
