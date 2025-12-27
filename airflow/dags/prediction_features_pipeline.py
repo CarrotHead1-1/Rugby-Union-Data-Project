@@ -14,8 +14,8 @@ with DAG (
     
     wait_for_etl = ExternalTaskSensor(
         task_id = "wait_for_rugby_pipeline",
-        external_id = "rugby_pipeline",
-        external_tak_id = None,
+        external_dag_id = "rugby_pipeline",
+        external_task_id = None,
         mode = "reschedule",
         poke_interval = 60,
         timeout = 60 * 60

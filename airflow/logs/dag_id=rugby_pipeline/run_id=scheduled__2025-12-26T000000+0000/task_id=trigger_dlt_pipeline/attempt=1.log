@@ -1,0 +1,36 @@
+[2025-12-27T18:13:08.564+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:13:08.579+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T18:13:08.580+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-27T18:13:08.600+0000] {taskinstance.py:2191} INFO - Executing <Task(DatabricksRunNowOperator): trigger_dlt_pipeline> on 2025-12-26 00:00:00+00:00
+[2025-12-27T18:13:08.609+0000] {standard_task_runner.py:60} INFO - Started process 302 to run task
+[2025-12-27T18:13:08.617+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'rugby_pipeline', 'trigger_dlt_pipeline', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/rugby_pipeline.py', '--cfg-path', '/tmp/tmpgwj0djdj']
+[2025-12-27T18:13:08.622+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask trigger_dlt_pipeline
+[2025-12-27T18:13:08.724+0000] {task_command.py:423} INFO - Running <TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2025-12-26T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2025-12-27T18:13:08.906+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rugby_pipeline' AIRFLOW_CTX_TASK_ID='trigger_dlt_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T18:13:08.937+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 918, in execute
+    self.run_id = hook.run_now(self.json)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/hooks/databricks.py", line 253, in run_now
+    response = self._do_api_call(RUN_NOW_ENDPOINT, json)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 536, in _do_api_call
+    url = f"https://{self.host}/{endpoint}"
+  File "/usr/local/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 158, in host
+    if "host" in self.databricks_conn.extra_dejson:
+  File "/usr/local/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 133, in databricks_conn
+    return self.get_connection(self.databricks_conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `databricks_default` isn't defined
+[2025-12-27T18:13:08.948+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=rugby_pipeline, task_id=trigger_dlt_pipeline, execution_date=20251226T000000, start_date=20251227T181308, end_date=20251227T181308
+[2025-12-27T18:13:08.970+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 3 for task trigger_dlt_pipeline (The conn_id `databricks_default` isn't defined; 302)
+[2025-12-27T18:13:09.032+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-12-27T18:13:09.064+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

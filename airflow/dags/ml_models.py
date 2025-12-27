@@ -14,7 +14,7 @@ with DAG (
     
     wait_for_prediction_features = ExternalTaskSensor(
         task_id = "wait_for_prediction_features",
-        external_id = "build_prediction_features",
+        external_dag_id = "build_prediction_features",
         external_task_id = None,
         mode = "reschedule",
         poke_interval = 60,
