@@ -13,14 +13,14 @@ with DAG (
 
 ) as dag:
     
-    wait_for_prediction_features = ExternalTaskSensor(
-        task_id = "wait_for_prediction_features",
-        external_dag_id = "build_prediction_features",
-        external_task_id = None,
-        mode = "reschedule",
-        poke_interval = 60,
-        timeout = 60 * 60
-    )
+    # wait_for_prediction_features = ExternalTaskSensor(
+    #     task_id = "wait_for_prediction_features",
+    #     external_dag_id = "build_prediction_features",
+    #     external_task_id = None,
+    #     mode = "reschedule",
+    #     poke_interval = 60,
+    #     timeout = 60 * 60
+    # )
 
     run_model = DatabricksRunNowOperator(
         task_id = "run_ml_models",
@@ -28,4 +28,4 @@ with DAG (
         job_id = 402563567448821
     )
 
-    wait_for_prediction_features >> run_model
+    run_model
