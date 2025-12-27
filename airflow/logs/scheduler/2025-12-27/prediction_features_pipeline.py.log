@@ -1,0 +1,80 @@
+[2025-12-27T18:09:29.677+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:09:29.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T18:09:29.680+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:09:29.680+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:09:29.723+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:09:29.717+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/prediction_features_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/prediction_features_pipeline.py", line 15, in <module>
+    wait_for_etl = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:09:29.727+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:09:29.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.085 seconds
+[2025-12-27T18:10:00.197+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:10:00.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T18:10:00.203+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:00.202+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:10:00.249+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:00.239+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/prediction_features_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/prediction_features_pipeline.py", line 15, in <module>
+    wait_for_etl = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:10:00.252+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:10:00.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.135 seconds
+[2025-12-27T18:10:30.828+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:10:30.831+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T18:10:30.833+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:30.832+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:10:30.886+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:30.875+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/prediction_features_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/prediction_features_pipeline.py", line 15, in <module>
+    wait_for_etl = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:10:30.889+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:10:30.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.144 seconds
+[2025-12-27T18:11:01.467+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:11:01.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T18:11:01.471+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:01.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:11:01.515+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:01.505+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/prediction_features_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/prediction_features_pipeline.py", line 15, in <module>
+    wait_for_etl = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:11:01.518+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:11:01.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.134 seconds
+[2025-12-27T18:11:32.366+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:11:32.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T18:11:32.372+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:32.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:11:32.418+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:32.409+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/prediction_features_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/prediction_features_pipeline.py", line 15, in <module>
+    wait_for_etl = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:11:32.422+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T18:11:32.465+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.105 seconds

@@ -1,0 +1,96 @@
+[2025-12-27T18:09:29.666+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/ml_models.py
+[2025-12-27T18:09:29.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_models.py for tasks to queue
+[2025-12-27T18:09:29.669+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:09:29.669+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:09:29.716+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:09:29.710+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_models.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_models.py", line 15, in <module>
+    wait_for_prediction_features = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:09:29.719+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:09:29.758+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_models.py took 0.099 seconds
+[2025-12-27T18:10:00.179+0000] {processor.py:161} INFO - Started process (PID=190) to work on /opt/airflow/dags/ml_models.py
+[2025-12-27T18:10:00.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_models.py for tasks to queue
+[2025-12-27T18:10:00.185+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:00.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:10:00.229+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:00.220+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_models.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_models.py", line 15, in <module>
+    wait_for_prediction_features = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:10:00.232+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:10:00.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_models.py took 0.147 seconds
+[2025-12-27T18:10:30.811+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/ml_models.py
+[2025-12-27T18:10:30.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_models.py for tasks to queue
+[2025-12-27T18:10:30.816+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:30.816+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:10:30.868+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:10:30.858+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_models.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_models.py", line 15, in <module>
+    wait_for_prediction_features = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:10:30.871+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:10:30.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_models.py took 0.157 seconds
+[2025-12-27T18:11:01.445+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:01.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_models.py for tasks to queue
+[2025-12-27T18:11:01.451+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:01.451+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:01.498+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:01.489+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_models.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_models.py", line 15, in <module>
+    wait_for_prediction_features = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:11:01.500+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:01.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_models.py took 0.148 seconds
+[2025-12-27T18:11:04.798+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:04.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_models.py for tasks to queue
+[2025-12-27T18:11:04.802+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:04.801+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:04.908+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:04.899+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_models.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_models.py", line 15, in <module>
+    wait_for_prediction_features = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:11:04.911+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:04.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_models.py took 0.164 seconds
+[2025-12-27T18:11:35.620+0000] {processor.py:161} INFO - Started process (PID=250) to work on /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:35.625+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_models.py for tasks to queue
+[2025-12-27T18:11:35.627+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:35.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:35.662+0000] {logging_mixin.py:188} INFO - [2025-12-27T18:11:35.655+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_models.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_models.py", line 15, in <module>
+    wait_for_prediction_features = ExternalTaskSensor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 420, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'external_dag_id'
+[2025-12-27T18:11:35.665+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_models.py
+[2025-12-27T18:11:35.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_models.py took 0.087 seconds
