@@ -1357,3 +1357,262 @@ NameError: name 'Trigger' is not defined
 [2025-12-27T19:34:53.533+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:34:53.532+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-12-27T19:34:53.574+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:34:53.573+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
 [2025-12-27T19:34:53.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.220 seconds
+[2025-12-27T19:35:24.204+0000] {processor.py:161} INFO - Started process (PID=1481) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:35:24.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:35:24.208+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:35:24.207+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:35:24.251+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:35:24.301+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:35:24.301+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:35:24.352+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:35:24.352+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:35:24.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.192 seconds
+[2025-12-27T19:35:55.047+0000] {processor.py:161} INFO - Started process (PID=1501) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:35:55.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:35:55.051+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:35:55.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:35:55.127+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:35:55.173+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:35:55.172+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:35:55.216+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:35:55.216+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:35:55.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.214 seconds
+[2025-12-27T19:36:25.930+0000] {processor.py:161} INFO - Started process (PID=1521) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:36:25.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:36:25.934+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:36:25.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:36:25.982+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:36:26.037+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:36:26.036+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:36:26.084+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:36:26.084+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:36:26.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.240 seconds
+[2025-12-27T19:36:56.738+0000] {processor.py:161} INFO - Started process (PID=1541) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:36:56.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:36:56.742+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:36:56.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:36:56.793+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:36:56.842+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:36:56.842+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:36:56.884+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:36:56.884+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:36:56.918+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.187 seconds
+[2025-12-27T19:37:27.550+0000] {processor.py:161} INFO - Started process (PID=1561) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:37:27.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:37:27.554+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:37:27.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:37:27.594+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:37:27.641+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:37:27.640+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:37:27.680+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:37:27.680+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:37:27.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.207 seconds
+[2025-12-27T19:37:58.379+0000] {processor.py:161} INFO - Started process (PID=1581) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:37:58.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:37:58.384+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:37:58.383+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:37:58.419+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:37:58.464+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:37:58.463+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:37:58.507+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:37:58.506+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:37:58.578+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.211 seconds
+[2025-12-27T19:38:29.289+0000] {processor.py:161} INFO - Started process (PID=1601) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:38:29.291+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:38:29.293+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:38:29.292+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:38:29.333+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:38:29.379+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:38:29.378+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:38:29.426+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:38:29.426+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:38:29.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.219 seconds
+[2025-12-27T19:39:00.133+0000] {processor.py:161} INFO - Started process (PID=1621) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:39:00.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:39:00.138+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:39:00.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:39:00.174+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:39:00.219+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:39:00.218+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:39:00.261+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:39:00.261+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:39:00.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.211 seconds
+[2025-12-27T19:39:30.899+0000] {processor.py:161} INFO - Started process (PID=1641) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:39:30.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:39:30.904+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:39:30.903+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:39:30.943+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:39:30.987+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:39:30.987+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:39:31.029+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:39:31.028+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:39:31.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.169 seconds
+[2025-12-27T19:40:01.650+0000] {processor.py:161} INFO - Started process (PID=1661) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:40:01.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:40:01.654+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:40:01.654+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:40:01.691+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:40:01.739+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:40:01.738+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:40:01.781+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:40:01.780+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:40:01.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.174 seconds
+[2025-12-27T19:40:32.418+0000] {processor.py:161} INFO - Started process (PID=1681) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:40:32.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:40:32.422+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:40:32.421+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:40:32.469+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:40:32.516+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:40:32.515+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:40:32.558+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:40:32.557+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:40:32.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.220 seconds
+[2025-12-27T19:41:03.275+0000] {processor.py:161} INFO - Started process (PID=1701) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:41:03.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:41:03.279+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:41:03.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:41:03.316+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:41:03.365+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:41:03.365+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:41:03.409+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:41:03.409+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:41:03.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.217 seconds
+[2025-12-27T19:41:34.066+0000] {processor.py:161} INFO - Started process (PID=1721) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:41:34.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:41:34.071+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:41:34.070+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:41:34.147+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:41:34.197+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:41:34.197+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:41:34.242+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:41:34.242+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:41:34.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.219 seconds
+[2025-12-27T19:42:04.851+0000] {processor.py:161} INFO - Started process (PID=1741) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:42:04.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:42:04.856+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:42:04.855+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:42:04.896+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:42:04.939+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:42:04.939+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:42:04.981+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:42:04.980+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:42:05.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.173 seconds
+[2025-12-27T19:42:35.626+0000] {processor.py:161} INFO - Started process (PID=1761) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:42:35.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:42:35.630+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:42:35.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:42:35.667+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:42:35.712+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:42:35.712+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:42:35.762+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:42:35.761+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:42:35.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.189 seconds
+[2025-12-27T19:43:06.439+0000] {processor.py:161} INFO - Started process (PID=1781) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:43:06.441+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:43:06.443+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:43:06.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:43:06.482+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:43:06.533+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:43:06.533+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:43:06.579+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:43:06.579+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:43:06.657+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.225 seconds
+[2025-12-27T19:43:37.335+0000] {processor.py:161} INFO - Started process (PID=1801) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:43:37.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:43:37.339+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:43:37.339+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:43:37.415+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:43:37.462+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:43:37.461+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:43:37.505+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:43:37.505+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:43:37.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.213 seconds
+[2025-12-27T19:44:08.165+0000] {processor.py:161} INFO - Started process (PID=1821) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:44:08.168+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:44:08.170+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:44:08.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:44:08.208+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:44:08.260+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:44:08.259+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:44:08.303+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:44:08.303+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:44:08.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.218 seconds
+[2025-12-27T19:44:38.991+0000] {processor.py:161} INFO - Started process (PID=1841) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:44:38.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:44:38.996+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:44:38.995+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:44:39.034+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:44:39.074+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:44:39.073+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:44:39.112+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:44:39.112+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:44:39.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.201 seconds
+[2025-12-27T19:45:09.781+0000] {processor.py:161} INFO - Started process (PID=1861) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:45:09.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:45:09.785+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:45:09.785+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:45:09.826+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:45:09.872+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:45:09.872+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:45:09.915+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:45:09.915+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:45:09.987+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.213 seconds
+[2025-12-27T19:45:40.609+0000] {processor.py:161} INFO - Started process (PID=1881) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:45:40.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:45:40.613+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:45:40.613+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:45:40.655+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:45:40.703+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:45:40.702+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:45:40.745+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:45:40.744+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:45:40.818+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.217 seconds
+[2025-12-27T19:46:11.420+0000] {processor.py:161} INFO - Started process (PID=1901) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:46:11.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:46:11.431+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:46:11.430+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:46:11.469+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:46:11.515+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:46:11.515+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:46:11.557+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:46:11.557+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:46:11.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.222 seconds
+[2025-12-27T19:46:42.223+0000] {processor.py:161} INFO - Started process (PID=1921) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:46:42.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:46:42.228+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:46:42.227+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:46:42.271+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:46:42.319+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:46:42.319+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:46:42.358+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:46:42.358+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:46:42.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.213 seconds
+[2025-12-27T19:47:13.055+0000] {processor.py:161} INFO - Started process (PID=1941) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:47:13.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:47:13.096+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:47:13.095+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:47:13.136+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:47:13.181+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:47:13.180+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:47:13.220+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:47:13.220+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:47:13.292+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.244 seconds
+[2025-12-27T19:47:43.876+0000] {processor.py:161} INFO - Started process (PID=1961) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:47:43.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:47:43.880+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:47:43.879+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:47:43.953+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:47:44.002+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:47:44.002+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:47:44.044+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:47:44.043+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:47:44.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.209 seconds
+[2025-12-27T19:48:14.685+0000] {processor.py:161} INFO - Started process (PID=1981) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:48:14.687+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:48:14.689+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:48:14.688+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:48:14.726+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:48:14.776+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:48:14.775+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:48:14.819+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:48:14.819+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:48:14.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.211 seconds
+[2025-12-27T19:48:45.239+0000] {processor.py:161} INFO - Started process (PID=2001) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:48:45.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:48:45.242+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:48:45.242+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:48:45.282+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:48:45.328+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:48:45.328+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:48:45.368+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:48:45.367+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:48:45.439+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.206 seconds
+[2025-12-27T19:49:16.035+0000] {processor.py:161} INFO - Started process (PID=2021) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:49:16.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:49:16.039+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:49:16.039+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:49:16.081+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:49:16.128+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:49:16.127+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:49:16.166+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:49:16.165+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:49:16.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.209 seconds
+[2025-12-27T19:49:46.837+0000] {processor.py:161} INFO - Started process (PID=2041) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:49:46.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:49:46.842+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:49:46.841+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:49:46.917+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:49:46.964+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:49:46.964+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:49:47.023+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:49:47.023+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:49:47.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.228 seconds
+[2025-12-27T19:50:17.667+0000] {processor.py:161} INFO - Started process (PID=2061) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:50:17.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:50:17.671+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:50:17.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:50:17.708+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:50:17.754+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:50:17.754+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:50:17.799+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:50:17.798+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:50:17.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.176 seconds
+[2025-12-27T19:50:48.435+0000] {processor.py:161} INFO - Started process (PID=2081) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:50:48.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:50:48.440+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:50:48.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:50:48.483+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:50:48.529+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:50:48.528+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:50:48.568+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:50:48.568+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:50:48.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.179 seconds
+[2025-12-27T19:51:19.203+0000] {processor.py:161} INFO - Started process (PID=2101) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:51:19.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:51:19.208+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:51:19.207+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:51:19.249+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:51:19.296+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:51:19.296+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:51:19.348+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:51:19.348+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:51:19.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.192 seconds
+[2025-12-27T19:51:50.052+0000] {processor.py:161} INFO - Started process (PID=2121) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:51:50.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:51:50.056+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:51:50.055+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:51:50.130+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:51:50.164+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:51:50.163+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:51:50.201+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:51:50.200+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:51:50.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.188 seconds
+[2025-12-27T19:52:20.828+0000] {processor.py:161} INFO - Started process (PID=2141) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:52:20.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:52:20.832+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:52:20.832+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:52:20.873+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:52:20.921+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:52:20.921+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:52:20.976+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:52:20.975+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:52:21.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.225 seconds
+[2025-12-27T19:52:51.633+0000] {processor.py:161} INFO - Started process (PID=2161) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:52:51.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:52:51.638+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:52:51.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:52:51.681+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:52:51.736+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:52:51.735+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:52:51.779+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:52:51.778+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:52:51.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.192 seconds
+[2025-12-27T19:53:22.552+0000] {processor.py:161} INFO - Started process (PID=2181) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:53:22.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:53:22.557+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:53:22.556+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:53:22.593+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:53:22.640+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:53:22.639+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:53:22.686+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:53:22.685+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:53:22.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.218 seconds
+[2025-12-27T19:53:53.341+0000] {processor.py:161} INFO - Started process (PID=2201) to work on /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:53:53.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/prediction_features_pipeline.py for tasks to queue
+[2025-12-27T19:53:53.345+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:53:53.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:53:53.387+0000] {processor.py:840} INFO - DAG(s) 'match_features_pipeline' retrieved from /opt/airflow/dags/prediction_features_pipeline.py
+[2025-12-27T19:53:53.432+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:53:53.432+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-12-27T19:53:53.476+0000] {logging_mixin.py:188} INFO - [2025-12-27T19:53:53.475+0000] {dag.py:3823} INFO - Setting next_dagrun for match_features_pipeline to 2025-12-27 00:00:00+00:00, run_after=2025-12-28 00:00:00+00:00
+[2025-12-27T19:53:53.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/prediction_features_pipeline.py took 0.180 seconds
