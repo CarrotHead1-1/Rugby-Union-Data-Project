@@ -1,0 +1,39 @@
+[2026-01-02T18:56:30.100+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.build_prediction_features manual__2026-01-02T18:56:26.557799+00:00 [queued]>
+[2026-01-02T18:56:30.108+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.build_prediction_features manual__2026-01-02T18:56:26.557799+00:00 [queued]>
+[2026-01-02T18:56:30.108+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-01-02T18:56:30.121+0000] {taskinstance.py:2191} INFO - Executing <Task(DatabricksRunNowOperator): build_prediction_features> on 2026-01-02 18:56:26.557799+00:00
+[2026-01-02T18:56:30.129+0000] {standard_task_runner.py:60} INFO - Started process 25497 to run task
+[2026-01-02T18:56:30.133+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'build_prediction_features', 'manual__2026-01-02T18:56:26.557799+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpxgde4t7l']
+[2026-01-02T18:56:30.136+0000] {standard_task_runner.py:88} INFO - Job 115: Subtask build_prediction_features
+[2026-01-02T18:56:30.195+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.build_prediction_features manual__2026-01-02T18:56:26.557799+00:00 [running]> on host 6c84c95fdea2
+[2026-01-02T18:56:30.285+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='build_prediction_features' AIRFLOW_CTX_EXECUTION_DATE='2026-01-02T18:56:26.557799+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-02T18:56:26.557799+00:00'
+[2026-01-02T18:56:30.295+0000] {base.py:83} INFO - Using connection ID 'databricks_default' for task execution.
+[2026-01-02T18:56:30.297+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:56:31.052+0000] {databricks.py:66} INFO - Run submitted with run_id: 687405465994181
+[2026-01-02T18:56:31.053+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:56:31.604+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:56:32.148+0000] {databricks.py:128} INFO - build_prediction_features in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-02T18:56:32.149+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/687405465994181
+[2026-01-02T18:56:32.150+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-02T18:57:02.172+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:57:02.881+0000] {databricks.py:128} INFO - build_prediction_features in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-02T18:57:02.882+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/687405465994181
+[2026-01-02T18:57:02.882+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-02T18:57:32.905+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:57:33.407+0000] {databricks.py:128} INFO - build_prediction_features in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-02T18:57:33.408+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/687405465994181
+[2026-01-02T18:57:33.409+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-02T18:58:03.432+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:58:04.159+0000] {databricks.py:128} INFO - build_prediction_features in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-02T18:58:04.160+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/687405465994181
+[2026-01-02T18:58:04.160+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-02T18:58:34.190+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:58:34.748+0000] {databricks.py:128} INFO - build_prediction_features in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-02T18:58:34.749+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/687405465994181
+[2026-01-02T18:58:34.749+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-02T18:59:04.757+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:59:05.345+0000] {databricks.py:77} INFO - build_prediction_features completed successfully.
+[2026-01-02T18:59:05.346+0000] {databricks.py:78} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/687405465994181
+[2026-01-02T18:59:05.356+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=match_features_pipeline, task_id=build_prediction_features, execution_date=20260102T185626, start_date=20260102T185630, end_date=20260102T185905
+[2026-01-02T18:59:05.392+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-02T18:59:05.412+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

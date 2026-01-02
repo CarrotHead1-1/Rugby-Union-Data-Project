@@ -1,0 +1,32 @@
+[2026-01-02T18:52:38.283+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-01-02T18:52:38.291+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-01-02T18:52:38.291+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-01-02T18:52:38.303+0000] {taskinstance.py:2191} INFO - Executing <Task(DatabricksRunNowOperator): trigger_dlt_pipeline> on 2026-01-01 00:00:00+00:00
+[2026-01-02T18:52:38.312+0000] {standard_task_runner.py:60} INFO - Started process 25329 to run task
+[2026-01-02T18:52:38.316+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'rugby_pipeline', 'trigger_dlt_pipeline', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '112', '--raw', '--subdir', 'DAGS_FOLDER/rugby_pipeline.py', '--cfg-path', '/tmp/tmpk_pqytfq']
+[2026-01-02T18:52:38.319+0000] {standard_task_runner.py:88} INFO - Job 112: Subtask trigger_dlt_pipeline
+[2026-01-02T18:52:38.378+0000] {task_command.py:423} INFO - Running <TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2026-01-01T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2026-01-02T18:52:38.464+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rugby_pipeline' AIRFLOW_CTX_TASK_ID='trigger_dlt_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-01-02T18:52:38.475+0000] {base.py:83} INFO - Using connection ID 'databricks_default' for task execution.
+[2026-01-02T18:52:38.477+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:52:39.335+0000] {databricks.py:66} INFO - Run submitted with run_id: 835707533598556
+[2026-01-02T18:52:39.336+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:52:39.954+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:52:40.605+0000] {databricks.py:128} INFO - trigger_dlt_pipeline in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-02T18:52:40.606+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/640017615260074/run/835707533598556
+[2026-01-02T18:52:40.606+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-02T18:53:10.613+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:53:11.130+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-02T18:53:11.951+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 922, in execute
+    _handle_databricks_operator_execution(self, hook, self.log, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 126, in _handle_databricks_operator_execution
+    raise AirflowException(error_message)
+airflow.exceptions.AirflowException: trigger_dlt_pipeline failed with terminal state: {'life_cycle_state': 'INTERNAL_ERROR', 'result_state': 'FAILED', 'state_message': 'Task ingest_data failed with message: Workload failed, see run output for details.'} and with the errors [{'task_key': 'ingest_data', 'run_id': 617874910153915, 'error': 'Please refer to the logs for this pipeline in the pipelines page.'}]
+[2026-01-02T18:53:11.954+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=rugby_pipeline, task_id=trigger_dlt_pipeline, execution_date=20260101T000000, start_date=20260102T185238, end_date=20260102T185311
+[2026-01-02T18:53:11.966+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 112 for task trigger_dlt_pipeline (trigger_dlt_pipeline failed with terminal state: {'life_cycle_state': 'INTERNAL_ERROR', 'result_state': 'FAILED', 'state_message': 'Task ingest_data failed with message: Workload failed, see run output for details.'} and with the errors [{'task_key': 'ingest_data', 'run_id': 617874910153915, 'error': 'Please refer to the logs for this pipeline in the pipelines page.'}]; 25329)
+[2026-01-02T18:53:12.010+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-02T18:53:12.030+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

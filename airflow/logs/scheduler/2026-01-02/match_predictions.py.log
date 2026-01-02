@@ -53,3 +53,258 @@
 [2026-01-02T18:51:55.591+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:51:55.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
 [2026-01-02T18:51:55.607+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
 [2026-01-02T18:51:55.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.037 seconds
+[2026-01-02T18:52:26.064+0000] {processor.py:161} INFO - Started process (PID=25318) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:52:26.065+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:52:26.067+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:52:26.066+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:52:26.082+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:52:26.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.038 seconds
+[2026-01-02T18:52:56.472+0000] {processor.py:161} INFO - Started process (PID=25344) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:52:56.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:52:56.474+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:52:56.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:52:56.488+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:52:56.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.036 seconds
+[2026-01-02T18:53:26.880+0000] {processor.py:161} INFO - Started process (PID=25366) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:53:26.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:53:26.882+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:53:26.882+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:53:26.898+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:53:26.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.038 seconds
+[2026-01-02T18:53:57.303+0000] {processor.py:161} INFO - Started process (PID=25386) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:53:57.305+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:53:57.306+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:53:57.305+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:53:57.320+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:53:57.335+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T18:54:27.764+0000] {processor.py:161} INFO - Started process (PID=25406) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:54:27.766+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:54:27.766+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:54:27.766+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:54:27.782+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:54:27.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.038 seconds
+[2026-01-02T18:54:58.172+0000] {processor.py:161} INFO - Started process (PID=25426) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:54:58.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:54:58.174+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:54:58.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:54:58.188+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:54:58.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.036 seconds
+[2026-01-02T18:55:28.692+0000] {processor.py:161} INFO - Started process (PID=25446) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:55:28.693+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:55:28.694+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:55:28.694+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:55:28.709+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:55:28.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T18:55:59.208+0000] {processor.py:161} INFO - Started process (PID=25466) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:55:59.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:55:59.210+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:55:59.210+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:55:59.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:55:59.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T18:56:29.739+0000] {processor.py:161} INFO - Started process (PID=25489) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:56:29.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:56:29.741+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:56:29.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:56:29.757+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:56:29.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.039 seconds
+[2026-01-02T18:57:00.265+0000] {processor.py:161} INFO - Started process (PID=25511) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:57:00.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:57:00.267+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:57:00.266+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:57:00.281+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:57:00.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T18:57:30.733+0000] {processor.py:161} INFO - Started process (PID=25531) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:57:30.734+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:57:30.735+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:57:30.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:57:30.748+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:57:30.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.033 seconds
+[2026-01-02T18:58:01.250+0000] {processor.py:161} INFO - Started process (PID=25551) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:58:01.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:58:01.252+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:58:01.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:58:01.266+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:58:01.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T18:58:31.655+0000] {processor.py:161} INFO - Started process (PID=25571) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:58:31.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:58:31.657+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:58:31.657+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:58:31.673+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:58:31.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.040 seconds
+[2026-01-02T18:59:02.088+0000] {processor.py:161} INFO - Started process (PID=25591) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:59:02.090+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:59:02.091+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:59:02.090+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:59:02.104+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:59:02.119+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T18:59:32.504+0000] {processor.py:161} INFO - Started process (PID=25616) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:59:32.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T18:59:32.507+0000] {logging_mixin.py:188} INFO - [2026-01-02T18:59:32.506+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:59:32.524+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T18:59:32.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.040 seconds
+[2026-01-02T19:00:02.923+0000] {processor.py:161} INFO - Started process (PID=25636) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:00:02.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:00:02.925+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:00:02.925+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:00:02.940+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:00:02.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:00:33.448+0000] {processor.py:161} INFO - Started process (PID=25656) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:00:33.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:00:33.450+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:00:33.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:00:33.464+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:00:33.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.033 seconds
+[2026-01-02T19:01:03.969+0000] {processor.py:161} INFO - Started process (PID=25676) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:01:03.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:01:03.971+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:01:03.970+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:01:03.985+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:01:04.000+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:01:34.400+0000] {processor.py:161} INFO - Started process (PID=25696) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:01:34.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:01:34.402+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:01:34.402+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:01:34.416+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:01:34.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:02:04.804+0000] {processor.py:161} INFO - Started process (PID=25716) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:02:04.805+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:02:04.807+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:02:04.807+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:02:04.821+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:02:04.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:02:35.302+0000] {processor.py:161} INFO - Started process (PID=25736) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:02:35.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:02:35.304+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:02:35.304+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:02:35.318+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:02:35.333+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:03:05.709+0000] {processor.py:161} INFO - Started process (PID=25756) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:03:05.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:03:05.711+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:03:05.710+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:03:05.725+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:03:05.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:03:36.245+0000] {processor.py:161} INFO - Started process (PID=25776) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:03:36.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:03:36.247+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:03:36.247+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:03:36.261+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:03:36.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:04:06.661+0000] {processor.py:161} INFO - Started process (PID=25796) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:04:06.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:04:06.663+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:04:06.663+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:04:06.678+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:04:06.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:04:37.210+0000] {processor.py:161} INFO - Started process (PID=25816) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:04:37.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:04:37.212+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:04:37.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:04:37.226+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:04:37.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.033 seconds
+[2026-01-02T19:05:07.619+0000] {processor.py:161} INFO - Started process (PID=25836) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:05:07.620+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:05:07.622+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:05:07.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:05:07.636+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:05:07.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.037 seconds
+[2026-01-02T19:05:38.156+0000] {processor.py:161} INFO - Started process (PID=25856) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:05:38.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:05:38.158+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:05:38.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:05:38.171+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:05:38.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.032 seconds
+[2026-01-02T19:06:08.573+0000] {processor.py:161} INFO - Started process (PID=25876) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:06:08.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:06:08.574+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:06:08.574+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:06:08.589+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:06:08.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:06:39.004+0000] {processor.py:161} INFO - Started process (PID=25896) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:06:39.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:06:39.006+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:06:39.006+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:06:39.020+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:06:39.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:07:09.441+0000] {processor.py:161} INFO - Started process (PID=25916) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:07:09.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:07:09.443+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:07:09.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:07:09.457+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:07:09.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:07:39.938+0000] {processor.py:161} INFO - Started process (PID=25936) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:07:39.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:07:39.940+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:07:39.939+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:07:39.953+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:07:39.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.033 seconds
+[2026-01-02T19:08:10.374+0000] {processor.py:161} INFO - Started process (PID=25956) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:08:10.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:08:10.376+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:08:10.376+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:08:10.390+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:08:10.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:08:40.889+0000] {processor.py:161} INFO - Started process (PID=25976) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:08:40.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:08:40.891+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:08:40.891+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:08:40.905+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:08:40.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.036 seconds
+[2026-01-02T19:09:11.316+0000] {processor.py:161} INFO - Started process (PID=25996) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:09:11.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:09:11.318+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:09:11.318+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:09:11.332+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:09:11.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.036 seconds
+[2026-01-02T19:09:41.762+0000] {processor.py:161} INFO - Started process (PID=26016) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:09:41.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:09:41.765+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:09:41.765+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:09:41.780+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:09:41.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.039 seconds
+[2026-01-02T19:10:12.164+0000] {processor.py:161} INFO - Started process (PID=26036) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:10:12.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:10:12.166+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:10:12.166+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:10:12.181+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:10:12.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.039 seconds
+[2026-01-02T19:10:42.584+0000] {processor.py:161} INFO - Started process (PID=26056) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:10:42.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:10:42.586+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:10:42.586+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:10:42.600+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:10:42.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:11:13.006+0000] {processor.py:161} INFO - Started process (PID=26076) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:11:13.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:11:13.008+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:11:13.008+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:11:13.025+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:11:13.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.039 seconds
+[2026-01-02T19:11:43.438+0000] {processor.py:161} INFO - Started process (PID=26096) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:11:43.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:11:43.440+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:11:43.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:11:43.455+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:11:43.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:12:13.984+0000] {processor.py:161} INFO - Started process (PID=26116) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:12:13.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:12:13.986+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:12:13.985+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:12:13.999+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:12:14.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.033 seconds
+[2026-01-02T19:12:44.465+0000] {processor.py:161} INFO - Started process (PID=26136) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:12:44.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:12:44.467+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:12:44.467+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:12:44.480+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:12:44.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:13:14.902+0000] {processor.py:161} INFO - Started process (PID=26156) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:13:14.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:13:14.904+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:13:14.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:13:14.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:13:14.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:13:45.436+0000] {processor.py:161} INFO - Started process (PID=26176) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:13:45.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:13:45.438+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:13:45.438+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:13:45.452+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:13:45.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:14:15.874+0000] {processor.py:161} INFO - Started process (PID=26196) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:14:15.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:14:15.877+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:14:15.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:14:15.890+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:14:15.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.036 seconds
+[2026-01-02T19:14:46.406+0000] {processor.py:161} INFO - Started process (PID=26216) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:14:46.407+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:14:46.408+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:14:46.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:14:46.421+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:14:46.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.032 seconds
+[2026-01-02T19:15:16.820+0000] {processor.py:161} INFO - Started process (PID=26236) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:15:16.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:15:16.822+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:15:16.822+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:15:16.836+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:15:16.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.033 seconds
+[2026-01-02T19:15:47.350+0000] {processor.py:161} INFO - Started process (PID=26256) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:15:47.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:15:47.353+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:15:47.352+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:15:47.367+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:15:47.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:16:17.773+0000] {processor.py:161} INFO - Started process (PID=26276) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:16:17.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:16:17.775+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:16:17.775+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:16:17.789+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:16:17.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds
+[2026-01-02T19:16:48.206+0000] {processor.py:161} INFO - Started process (PID=26296) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:16:48.207+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:16:48.208+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:16:48.208+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:16:48.222+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:16:48.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.035 seconds
+[2026-01-02T19:17:18.616+0000] {processor.py:161} INFO - Started process (PID=26316) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:17:18.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:17:18.618+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:17:18.618+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:17:18.634+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:17:18.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.041 seconds
+[2026-01-02T19:17:49.243+0000] {processor.py:161} INFO - Started process (PID=26336) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:17:49.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-02T19:17:49.245+0000] {logging_mixin.py:188} INFO - [2026-01-02T19:17:49.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:17:49.259+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-02T19:17:49.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 0.034 seconds

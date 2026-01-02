@@ -1,0 +1,16 @@
+[2026-01-02T18:59:06.195+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_features_pipeline.trigger_ml_models manual__2026-01-02T18:56:26.557799+00:00 [queued]>
+[2026-01-02T18:59:06.203+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_features_pipeline.trigger_ml_models manual__2026-01-02T18:56:26.557799+00:00 [queued]>
+[2026-01-02T18:59:06.204+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-01-02T18:59:06.215+0000] {taskinstance.py:2191} INFO - Executing <Task(TriggerDagRunOperator): trigger_ml_models> on 2026-01-02 18:56:26.557799+00:00
+[2026-01-02T18:59:06.222+0000] {standard_task_runner.py:60} INFO - Started process 25599 to run task
+[2026-01-02T18:59:06.225+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'match_features_pipeline', 'trigger_ml_models', 'manual__2026-01-02T18:56:26.557799+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/prediction_features_pipeline.py', '--cfg-path', '/tmp/tmpx4gf3hvp']
+[2026-01-02T18:59:06.227+0000] {standard_task_runner.py:88} INFO - Job 116: Subtask trigger_ml_models
+[2026-01-02T18:59:06.279+0000] {task_command.py:423} INFO - Running <TaskInstance: match_features_pipeline.trigger_ml_models manual__2026-01-02T18:56:26.557799+00:00 [running]> on host 6c84c95fdea2
+[2026-01-02T18:59:06.361+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='match_features_pipeline' AIRFLOW_CTX_TASK_ID='trigger_ml_models' AIRFLOW_CTX_EXECUTION_DATE='2026-01-02T18:56:26.557799+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-02T18:56:26.557799+00:00'
+[2026-01-02T18:59:07.700+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/google/cloud/links/dataproc.py:79 AirflowProviderDeprecationWarning: This DataprocLink is deprecated.
+[2026-01-02T18:59:07.701+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/google/cloud/links/dataproc.py:128 AirflowProviderDeprecationWarning: This DataprocListLink is deprecated.
+[2026-01-02T18:59:08.447+0000] {trigger_dagrun.py:210} INFO - Waiting for ml_models on 2026-01-02 18:59:06.362124+00:00 to become allowed state ['success'] ...
+[2026-01-02T19:00:08.479+0000] {trigger_dagrun.py:223} INFO - ml_models finished with allowed state success
+[2026-01-02T19:00:08.490+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=match_features_pipeline, task_id=trigger_ml_models, execution_date=20260102T185626, start_date=20260102T185906, end_date=20260102T190008
+[2026-01-02T19:00:08.542+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-02T19:00:08.558+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
