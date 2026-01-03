@@ -1,0 +1,5 @@
+[2026-01-03T02:31:47.635+0000] {processor.py:161} INFO - Started process (PID=33823) to work on /opt/airflow/dags/match_predictions.py
+[2026-01-03T02:31:47.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/match_predictions.py for tasks to queue
+[2026-01-03T02:31:47.762+0000] {logging_mixin.py:188} INFO - [2026-01-03T02:31:47.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/match_predictions.py
+[2026-01-03T13:11:04.600+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/match_predictions.py
+[2026-01-03T13:11:04.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/match_predictions.py took 1.955 seconds

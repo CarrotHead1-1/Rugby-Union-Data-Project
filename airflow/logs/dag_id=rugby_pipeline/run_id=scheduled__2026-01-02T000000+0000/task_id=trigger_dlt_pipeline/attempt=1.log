@@ -1,0 +1,18 @@
+[2026-01-03T13:11:04.257+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2026-01-02T00:00:00+00:00 [queued]>
+[2026-01-03T13:11:04.343+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2026-01-02T00:00:00+00:00 [queued]>
+[2026-01-03T13:11:04.372+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-01-03T13:11:04.543+0000] {taskinstance.py:2191} INFO - Executing <Task(DatabricksRunNowOperator): trigger_dlt_pipeline> on 2026-01-02 00:00:00+00:00
+[2026-01-03T13:11:04.699+0000] {standard_task_runner.py:60} INFO - Started process 33826 to run task
+[2026-01-03T13:11:04.931+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'rugby_pipeline', 'trigger_dlt_pipeline', 'scheduled__2026-01-02T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/rugby_pipeline.py', '--cfg-path', '/tmp/tmpa7q0mqzj']
+[2026-01-03T13:11:05.303+0000] {standard_task_runner.py:88} INFO - Job 119: Subtask trigger_dlt_pipeline
+[2026-01-03T13:11:05.599+0000] {task_command.py:423} INFO - Running <TaskInstance: rugby_pipeline.trigger_dlt_pipeline scheduled__2026-01-02T00:00:00+00:00 [running]> on host 6c84c95fdea2
+[2026-01-03T13:11:06.035+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rugby_pipeline' AIRFLOW_CTX_TASK_ID='trigger_dlt_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2026-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-02T00:00:00+00:00'
+[2026-01-03T13:11:06.065+0000] {base.py:83} INFO - Using connection ID 'databricks_default' for task execution.
+[2026-01-03T13:11:06.082+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:06.357+0000] {databricks_base.py:516} ERROR - Attempt 1 API Request to Databricks failed with reason: <Future at 0x7fef1a2afaf0 state=finished raised ConnectionError>
+[2026-01-03T13:11:09.665+0000] {databricks.py:66} INFO - Run submitted with run_id: 1056236249183553
+[2026-01-03T13:11:09.667+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:10.540+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:11.465+0000] {databricks.py:128} INFO - trigger_dlt_pipeline in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-03T13:11:11.469+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/640017615260074/run/1056236249183553
+[2026-01-03T13:11:11.470+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
