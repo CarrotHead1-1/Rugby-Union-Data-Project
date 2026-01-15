@@ -16,3 +16,18 @@
 [2026-01-03T13:11:11.412+0000] {databricks.py:128} INFO - build_prediction_features in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
 [2026-01-03T13:11:11.415+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/35532112137397/run/811395988247190
 [2026-01-03T13:11:11.416+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-03T13:11:41.447+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:41.993+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:42.806+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 922, in execute
+    _handle_databricks_operator_execution(self, hook, self.log, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 126, in _handle_databricks_operator_execution
+    raise AirflowException(error_message)
+airflow.exceptions.AirflowException: build_prediction_features failed with terminal state: {'life_cycle_state': 'INTERNAL_ERROR', 'result_state': 'FAILED', 'state_message': 'Task create_match_features failed with message: Workload failed, see run output for details.'} and with the errors [{'task_key': 'create_match_features', 'run_id': 318471377998769, 'error': 'Please refer to the logs for this pipeline in the pipelines page.'}]
+[2026-01-03T13:11:42.850+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=match_features_pipeline, task_id=build_prediction_features, execution_date=20260102T000000, start_date=20260103T131104, end_date=20260103T131142
+[2026-01-03T13:11:42.876+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 118 for task build_prediction_features (build_prediction_features failed with terminal state: {'life_cycle_state': 'INTERNAL_ERROR', 'result_state': 'FAILED', 'state_message': 'Task create_match_features failed with message: Workload failed, see run output for details.'} and with the errors [{'task_key': 'create_match_features', 'run_id': 318471377998769, 'error': 'Please refer to the logs for this pipeline in the pipelines page.'}]; 33827)
+[2026-01-03T13:11:42.914+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-03T13:11:42.953+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

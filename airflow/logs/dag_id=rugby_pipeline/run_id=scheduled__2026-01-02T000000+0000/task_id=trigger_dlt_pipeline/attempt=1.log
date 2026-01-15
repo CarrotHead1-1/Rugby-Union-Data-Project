@@ -16,3 +16,18 @@
 [2026-01-03T13:11:11.465+0000] {databricks.py:128} INFO - trigger_dlt_pipeline in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
 [2026-01-03T13:11:11.469+0000] {databricks.py:129} INFO - View run status, Spark UI, and logs at https://dbc-423a5d50-03a6.cloud.databricks.com/?o=684212911772223#job/640017615260074/run/1056236249183553
 [2026-01-03T13:11:11.470+0000] {databricks.py:130} INFO - Sleeping for 30 seconds.
+[2026-01-03T13:11:41.504+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:42.048+0000] {databricks_base.py:546} INFO - Using basic auth.
+[2026-01-03T13:11:42.881+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 922, in execute
+    _handle_databricks_operator_execution(self, hook, self.log, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/databricks/operators/databricks.py", line 126, in _handle_databricks_operator_execution
+    raise AirflowException(error_message)
+airflow.exceptions.AirflowException: trigger_dlt_pipeline failed with terminal state: {'life_cycle_state': 'INTERNAL_ERROR', 'result_state': 'FAILED', 'state_message': 'Task ingest_data failed with message: Workload failed, see run output for details.'} and with the errors [{'task_key': 'ingest_data', 'run_id': 677812007396824, 'error': 'Please refer to the logs for this pipeline in the pipelines page.'}]
+[2026-01-03T13:11:42.888+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=rugby_pipeline, task_id=trigger_dlt_pipeline, execution_date=20260102T000000, start_date=20260103T131104, end_date=20260103T131142
+[2026-01-03T13:11:42.913+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 119 for task trigger_dlt_pipeline (trigger_dlt_pipeline failed with terminal state: {'life_cycle_state': 'INTERNAL_ERROR', 'result_state': 'FAILED', 'state_message': 'Task ingest_data failed with message: Workload failed, see run output for details.'} and with the errors [{'task_key': 'ingest_data', 'run_id': 677812007396824, 'error': 'Please refer to the logs for this pipeline in the pipelines page.'}]; 33826)
+[2026-01-03T13:11:42.956+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-03T13:11:42.992+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
