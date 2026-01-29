@@ -43,7 +43,9 @@ def baseline_elo():
     baseline_elo_df = spark.createDataFrame(
         [
             ("premiership", 1500),
-            ("championship", 1100)
+            ("championship", 900),
+            ("urc", 1300),
+            ("pro-14", 1800),
         ],
         #schema
         ["Competition", "StartingElo"]
